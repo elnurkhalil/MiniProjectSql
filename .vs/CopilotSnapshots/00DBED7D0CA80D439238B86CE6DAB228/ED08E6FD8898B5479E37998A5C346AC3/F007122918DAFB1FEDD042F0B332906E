@@ -1,0 +1,85 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Interfaces;
+using ConpanyApp.Service.Interfaces;
+using System;
+using System.Collections.Generic;
+
+namespace ConpanyApp.Service.Services
+{
+    public class EmployeeService : IEmployeeService
+    {
+        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IDepartmentRepository _departmentRepository;
+
+        public EmployeeService(IEmployeeRepository employeeRepository, IDepartmentRepository departmentRepository)
+        {
+            _employeeRepository = employeeRepository ?? throw new ArgumentNullException(nameof(employeeRepository));
+            _departmentRepository = departmentRepository ?? throw new ArgumentNullException(nameof(departmentRepository));
+        }
+
+        public List<Employee> GetAll() => _employeeRepository.GetAll();
+
+        public Employee GetById(int id) => _employeeRepository.GetById(id);
+
+        public void Create(Employee employee)
+        {
+            if (employee == null)
+                throw new ArgumentNullException(nameof(employee));
+
+            if (string.IsNullOrWhiteSpace(employee.Name) || string.IsNullOrWhiteSpace(employee.Surname))
+                throw new ArgumentException("Employee name and surname must be provided.");
+
+            if (employee.Name.Any(char.IsDigit) || employee.Surname.Any(char.IsDigit))
+                throw new ArgumentException("Employee name and surname must not contain digits.");
+
+            if (employee.Department != null)
+            {
+                // ensure department exists or create fallback
+                if (employee.Department.Id > 0)
+                {
+                    var dept = _departmentRepository.GetAll().Find(d => d.Id == employee.Department.Id);
+                    if (dept == null)
+                        throw new KeyNotFoundException($"Department with id {employee.Department.Id} not found.");
+
+                    employee.Department = dept;
+                }
+                else if (!string.IsNullOrWhiteSpace(employee.Department.Name))
+                {
+                    var found = _departmentRepository.SearchByName(employee.Department.Name);
+                    employee.Department = found.Count > 0 ? found[0] : employee.Department;
+                }
+            }
+
+            _employeeRepository.Create(employee);
+        }
+
+        public void Edit(Employee employee)
+        {
+            if (employee == null)
+                throw new ArgumentNullException(nameof(employee));
+
+            if (employee.Id <= 0)
+                throw new ArgumentOutOfRangeException(nameof(employee.Id), "Employee id must be greater than zero.");
+
+            _employeeRepository.Edit(employee);
+        }
+
+        public void Delete(int id)
+        {
+            if (id <= 0)
+                throw new ArgumentOutOfRangeException(nameof(id), "Id must be greater than zero.");
+
+            _employeeRepository.Delete(id);
+        }
+
+        public List<Employee> GetByAge(int age) => _employeeRepository.GetByAge(age);
+
+        public List<Employee> GetByDepartmentId(int departmentId) => _employeeRepository.GetByDepartmentId(departmentId);
+
+        public List<Employee> GetByDepartmentName(string departmentName) => _employeeRepository.GetByDepartmentName(departmentName);
+
+        public List<Employee> SearchByNameOrSurname(string text) => _employeeRepository.SearchByNameOrSurname(text);
+
+        public int GetEmployeeCount() => _employeeRepository.GetEmployeeCount();
+    }
+}

@@ -1,0 +1,55 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class EmployeeRepository : BaseRepository<Employee>, IEmployeeRepository
+    {
+        public List<Employee> GetByAge(int age)
+        {
+            return AppDbContext.Employees.Where(e => e.Age == age).ToList();
+        }
+
+        public List<Employee> GetByDepartmentId(int departmentId)
+        {
+            return AppDbContext.Employees.Where(e => e.DepartmentId == departmentId).ToList();
+        }
+
+        public List<Employee> GetByDepartmentName(string departmentName)
+        {
+            if (string.IsNullOrWhiteSpace(departmentName))
+            {
+                return new List<Employee>();
+            }
+
+            return AppDbContext.Employees
+                .Where(e => e.Department != null && e.Department.Name == departmentName)
+                .ToList();
+        }
+
+        public List<Employee> SearchByNameOrSurname(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                return AppDbContext.Employees.ToList();
+            }
+
+            var lower = text.ToLowerInvariant();
+            return AppDbContext.Employees
+                .Where(e =>
+                    (!string.IsNullOrEmpty(e.Name) && e.Name.ToLower().Contains(lower)) ||
+                    (!string.IsNullOrEmpty(e.Surname) && e.Surname.ToLower().Contains(lower)))
+                .ToList();
+        }
+        public int GetEmployeeCount()
+        {
+            return AppDbContext.Employees.Count();
+        }
+    }
+}

@@ -1,0 +1,25 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class DepartmentRepository : BaseRepository<Department>, IDepartmentRepository
+    {
+        public List<Department> SearchByName(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return new List<Department>();
+
+            return AppDbContext.Departments.Where(d => d.Name != null && d.Name.Contains(text, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+
+        public List<Department> GetSortedByCapacity()
+        {
+            return AppDbContext.Departments.OrderByDescending(d => d.Capacity).ToList();
+        }
+    }
+}

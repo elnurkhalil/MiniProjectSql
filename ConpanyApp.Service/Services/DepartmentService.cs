@@ -1,0 +1,126 @@
+using CompanyApp.Domain.Entities;
+using CompanyApp.Domain.Enums;
+using CompanyApp.Repository.Interfaces;
+using CompanyApp.Service.Exceptions;
+using CompanyApp.Service.Helpers.Constants;
+using CompanyApp.Service.Services.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Formats.Tar;
+using System.Linq;
+using System.Xml.Linq;
+
+namespace ConpanyApp.Service.Services
+{
+    public class DepartmentService : IDepartmentService
+    {
+        private readonly IDepartmentRepository _repo;
+
+        public DepartmentService(IDepartmentRepository repo)
+        {
+            _repo = repo ?? throw new ArgumentNullException(nameof(repo));
+        }
+
+        public List<Department> GetAll()
+        {
+            var departments = _repo.GetAll();
+
+            if (departments == null || departments.Count == 0)
+            {
+                throw new NotFoundException(Messages.DontHaveAnyDepartments);
+            }
+
+            return departments;
+        }
+
+        public Department GetById(int id)
+        {
+            if (id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+
+            return _repo.GetById(id) ?? throw new NotFoundException(string.Format(Messages.DepartmentNotFound, id));
+        }
+
+        public void Create(Department department)
+        {
+            if (department == null)
+                throw new ValidationException(Messages.DepartmentMustNotBeNull);
+
+            ValidateName(department.Name);
+
+            var isDuplicate = _repo.GetAll()?
+                .Any(d => d.Name.Equals(department.Name, StringComparison.OrdinalIgnoreCase)) ?? false;
+
+            if (isDuplicate)
+            {
+                throw new ValidationException(Messages.SameDepartmentName);
+            }
+
+            if (department.Capacity < 0)
+                throw new ValidationException(Messages.DepartmentCapacityNonNegative);
+
+            _repo.Create(department);
+        }
+
+        public void Edit(Department department, string? capacityInput)
+        {
+            if (department == null) throw new ValidationException(Messages.DepartmentMustNotBeNull);
+
+            var existing = GetById(department.Id);
+
+            if (!string.IsNullOrWhiteSpace(department.Name))
+            {
+                ValidateName(department.Name);
+
+                var isDuplicate = _repo.GetAll()?
+                    .Any(d => d.Id != department.Id && d.Name.Equals(department.Name, StringComparison.OrdinalIgnoreCase)) ?? false;
+
+                if (isDuplicate)
+                {
+                    throw new ValidationException(Messages.SameDepartmentName);
+                }
+
+                existing.Name = department.Name;
+            }
+
+            if (!string.IsNullOrWhiteSpace(capacityInput))
+            {
+                if (!int.TryParse(capacityInput.Trim(), out var parsed) || parsed < 0)
+                    throw new ValidationException(Messages.DepartmentCapacityInvalidNumber);
+
+                existing.Capacity = parsed;
+            }
+
+            _repo.Edit(existing);
+        }
+
+        public void Delete(int id)
+        {
+            var existing = GetById(id);
+            _repo.Delete(id);
+        }
+
+        public List<Department> SearchByName(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                return _repo.GetAll() ?? new List<Department>();
+            }
+
+            return _repo.SearchByName(text) ?? new List<Department>();
+        }
+
+        public List<Department> GetSortedByCapacity(SortDirection direction)
+        {
+            return _repo.GetSortedByCapacity(direction) ?? new List<Department>();
+        }
+
+        private void ValidateName(string? name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ValidationException(Messages.DepartmentNameRequired);
+
+            if (name.Any(char.IsDigit))
+                throw new ValidationException(Messages.DepartmentNameNoDigits);
+        }
+    }
+}

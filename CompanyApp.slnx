@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ConpanyApp.Domain/CompanyApp.Domain.csproj" Id="dcdeffa4-da9d-4879-8d5b-142d75a3c855" />
+  <Project Path="ConpanyApp.Repository/CompanyApp.Repository.csproj" Id="b34a274f-0d7d-4ce0-bb43-e73302e324b1" />
+  <Project Path="ConpanyApp.Service/CompanyApp.Service.csproj" Id="8ada4749-9dbc-46bb-b89c-a17f4f8b54a8" />
+  <Project Path="MiniProject/CompanyApp.Console.csproj" />
+</Solution>

@@ -1,0 +1,55 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ConpanyApp.Domain.Exceptions;
+using ConpanyApp.Domain.Helpers.Constants;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class EmployeeRepository : BaseRepository<Employee>, IEmployeeRepository
+    {
+        public List<Employee> GetByAge(int age)
+        {
+            if (age <= 0)
+                return new List<Employee>();
+
+            return AppDbContext.Employees.Where(e => e.Age == age).ToList();
+        }
+
+        public List<Employee> GetByDepartmentId(int departmentId)
+        {
+            if (departmentId <= 0)
+                return new List<Employee>();
+
+            return AppDbContext.Employees.Where(e => e.Department != null && e.Department.Id == departmentId).ToList();
+        }
+
+        public List<Employee> GetByDepartmentName(string departmentName)
+        {
+            if (string.IsNullOrWhiteSpace(departmentName))
+            {
+                return new List<Employee>();
+            }
+
+            return AppDbContext.Employees.Where(e => e.Department != null && e.Department.Name == departmentName).ToList();
+        }
+
+        public List<Employee> SearchByNameOrSurname(string text)
+        {
+            text = text?.Trim();
+            if (string.IsNullOrEmpty(text))
+                return new List<Employee>();
+
+            return AppDbContext.Employees.Where(e => (!string.IsNullOrWhiteSpace(e.Name) && e.Name.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0)|| (!string.IsNullOrWhiteSpace(e.Surname) && e.Surname.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0)).ToList();
+        }
+        public int GetEmployeeCount()
+        {
+            return AppDbContext.Employees.Count;
+        }
+    }
+}

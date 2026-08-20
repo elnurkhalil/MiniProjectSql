@@ -1,0 +1,211 @@
+﻿using System;
+using ConpanyApp.Repository.Repositories;
+using ConpanyApp.Service.Services;
+using ConpanyApp.Domain.Entities;
+using ConpanyApp.Service.Exceptions;
+
+class Program
+{
+    static void Main()
+    {
+        var deptRepo = new DepartmentRepository();
+        var empRepo = new EmployeeRepository();
+
+        var deptService = new DepartmentService(deptRepo);
+        var empService = new EmployeeService(empRepo, deptRepo);
+
+        while (true)
+        {
+            Console.WriteLine("--- Company App (Unified) ---");
+            Console.WriteLine("1. List all departments");
+            Console.WriteLine("2. Create department");
+            Console.WriteLine("3. Edit department");
+            Console.WriteLine("4. Delete department");
+            Console.WriteLine("5. Search departments by name");
+            Console.WriteLine("6. Sort departments by capacity (asc/desc)");
+            Console.WriteLine("7. List all employees");
+            Console.WriteLine("8. Create employee");
+            Console.WriteLine("9. Edit employee");
+            Console.WriteLine("10. Delete employee");
+            Console.WriteLine("11. Get employees by age");
+            Console.WriteLine("12. Get employees by department id");
+            Console.WriteLine("13. Search employees by name or surname");
+            Console.WriteLine("14. Employees count");
+            Console.WriteLine("0. Exit");
+            Console.Write("Select: ");
+            var key = Console.ReadLine();
+
+            try
+            {
+                if (key == "0")
+                    break;
+
+                switch (key)
+                {
+                    case "1":
+                        var depts = deptService.GetAll();
+                        foreach (var d in depts)
+                            Console.WriteLine($"Id:{d.Id} Name:{d.Name} Capacity:{d.Capacity}");
+                        break;
+                    case "2":
+                        Console.Write("Name: ");
+                        var dname = Console.ReadLine() ?? string.Empty;
+                        var dcap = ReadNonNegativeInt("Capacity: ");
+                        deptService.Create(new Department { Name = dname, Capacity = dcap });
+                        Console.WriteLine("Department created.");
+                        break;
+                    case "3":
+                        var did = ReadPositiveInt("Id: ");
+                        Console.Write("New name: ");
+                        var newDName = Console.ReadLine() ?? string.Empty;
+                        var newDCap = ReadNonNegativeInt("New capacity: ");
+                        deptService.Edit(new Department { Id = did, Name = newDName, Capacity = newDCap });
+                        Console.WriteLine("Department edited.");
+                        break;
+                    case "4":
+                        var delDid = ReadPositiveInt("Id: ");
+                        deptService.Delete(delDid);
+                        Console.WriteLine("Department deleted.");
+                        break;
+                    case "5":
+                        Console.Write("Text: ");
+                        var text = Console.ReadLine() ?? string.Empty;
+                        var found = deptService.SearchByName(text);
+                        foreach (var d in found)
+                            Console.WriteLine($"Id:{d.Id} Name:{d.Name} Capacity:{d.Capacity}");
+                        break;
+                    case "6":
+                        Console.Write("Order (asc/desc): ");
+                        var order = Console.ReadLine() ?? string.Empty;
+                        var sorted = deptService.GetSortedByCapacity(order);
+                        foreach (var d in sorted)
+                            Console.WriteLine($"Id:{d.Id} Name:{d.Name} Capacity:{d.Capacity}");
+                        break;
+                    case "7":
+                        var emps = empService.GetAll();
+                        foreach (var e in emps)
+                            Console.WriteLine($"Id:{e.Id} Name:{e.Name} {e.Surname} Age:{e.Age} Dept:{e.Department?.Name}");
+                        break;
+                    case "8":
+                        Console.Write("Name: ");
+                        var name = Console.ReadLine() ?? string.Empty;
+                        Console.Write("Surname: ");
+                        var surname = Console.ReadLine() ?? string.Empty;
+                        var age = ReadNonNegativeInt("Age: ");
+                        Console.Write("Address: ");
+                        var addr = Console.ReadLine() ?? string.Empty;
+                        var deptId = ReadInt("Department id (or 0 to skip): ", allowZero: true);
+                        Department? dept = null;
+                        if (deptId > 0)
+                        {
+                            dept = deptService.GetById(deptId);
+                        }
+                        empService.Create(new Employee { Name = name, Surname = surname, Age = age, Address = addr, Department = dept! });
+                        Console.WriteLine("Employee created.");
+                        break;
+                    case "9":
+                        var id = ReadPositiveInt("Id: ");
+                        Console.Write("Name: ");
+                        var ename = Console.ReadLine() ?? string.Empty;
+                        Console.Write("Surname: ");
+                        var esurname = Console.ReadLine() ?? string.Empty;
+                        var eage = ReadNonNegativeInt("Age: ");
+                        Console.Write("Address: ");
+                        var eaddr = Console.ReadLine() ?? string.Empty;
+                        var edeptId = ReadInt("Department id (or 0 to skip): ", allowZero: true);
+                        Department? edept = null;
+                        if (edeptId > 0)
+                            edept = deptService.GetById(edeptId);
+                        empService.Edit(new Employee { Id = id, Name = ename, Surname = esurname, Age = eage, Address = eaddr, Department = edept! });
+                        Console.WriteLine("Employee edited.");
+                        break;
+                    case "10":
+                        var delId = ReadPositiveInt("Id: ");
+                        empService.Delete(delId);
+                        Console.WriteLine("Employee deleted.");
+                        break;
+                    case "11":
+                        var searchAge = ReadPositiveInt("Age: ");
+                        var byAge = empService.GetByAge(searchAge);
+                        foreach (var e in byAge)
+                            Console.WriteLine($"Id:{e.Id} Name:{e.Name} {e.Surname} Age:{e.Age} Dept:{e.Department?.Name}");
+                        break;
+                    case "12":
+                        var searchDeptId = ReadPositiveInt("Department id: ");
+                        var byDept = empService.GetByDepartmentId(searchDeptId);
+                        foreach (var e in byDept)
+                            Console.WriteLine($"Id:{e.Id} Name:{e.Name} {e.Surname} Age:{e.Age} Dept:{e.Department?.Name}");
+                        break;
+                    case "13":
+                        Console.Write("Text: ");
+                        var stext = Console.ReadLine() ?? string.Empty;
+                        var se = empService.SearchByNameOrSurname(stext);
+                        foreach (var e in se)
+                            Console.WriteLine($"Id:{e.Id} Name:{e.Name} {e.Surname} Age:{e.Age} Dept:{e.Department?.Name}");
+                        break;
+                    case "14":
+                        Console.WriteLine($"Total employees: {empService.GetEmployeeCount()}");
+                        break;
+                    default:
+                        Console.WriteLine("Unknown option.");
+                        break;
+                }
+            }
+
+    static int ReadInt(string prompt, bool allowZero = false)
+    {
+        while (true)
+        {
+            Console.Write(prompt);
+            var s = Console.ReadLine();
+            if (int.TryParse(s, out var v))
+            {
+                if (!allowZero && v == 0)
+                {
+                    Console.WriteLine("Value must not be zero. Please enter a valid integer.");
+                    continue;
+                }
+                return v;
+            }
+            Console.WriteLine("Please enter a valid integer.");
+        }
+    }
+
+    static int ReadNonNegativeInt(string prompt)
+    {
+        while (true)
+        {
+            Console.Write(prompt);
+            var s = Console.ReadLine();
+            if (int.TryParse(s, out var v) && v >= 0)
+                return v;
+
+            Console.WriteLine("Please enter a non-negative integer (0 or greater).");
+        }
+    }
+
+    static int ReadPositiveInt(string prompt)
+    {
+        while (true)
+        {
+            Console.Write(prompt);
+            var s = Console.ReadLine();
+            if (int.TryParse(s, out var v) && v > 0)
+                return v;
+
+            Console.WriteLine("Please enter a positive integer (greater than 0).");
+        }
+    }
+            catch (ValidationException ex)
+            {
+                Console.WriteLine($"Validation error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+
+            Console.WriteLine();
+        }
+    }
+}

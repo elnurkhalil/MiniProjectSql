@@ -1,0 +1,12 @@
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\bin\Debug\net8.0\ConpanyApp.Domain.deps.json
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\bin\Debug\net8.0\ConpanyApp.Domain.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\bin\Debug\net8.0\ConpanyApp.Domain.pdb
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\ConpanyApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\ConpanyApp.Domain.AssemblyInfoInputs.cache
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\ConpanyApp.Domain.AssemblyInfo.cs
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\ConpanyApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\ConpanyApp.Domain.sourcelink.json
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\ConpanyApp.Domain.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\refint\ConpanyApp.Domain.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\ConpanyApp.Domain.pdb
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\ref\ConpanyApp.Domain.dll

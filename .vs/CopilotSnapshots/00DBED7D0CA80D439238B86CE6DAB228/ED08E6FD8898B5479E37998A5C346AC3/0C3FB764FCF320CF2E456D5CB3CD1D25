@@ -1,0 +1,38 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class DepartmentRepository : BaseRepository<Department>, IDepartmentRepository
+    {
+        public List<Department> SearchByName(string text)
+        {
+            text = text?.Trim();
+            if (string.IsNullOrEmpty(text))
+                return new List<Department>();
+
+            return AppDbContext.Departments
+                .Where(d => !string.IsNullOrWhiteSpace(d.Name) && d.Name.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0)
+                .ToList();
+        }
+
+        public List<Department> GetSortedByCapacity(string input)
+        {
+            if (input == null)
+                throw new ArgumentException("Order must be 'asc' or 'desc'.", nameof(input));
+
+            var normalized = input.Trim().ToLowerInvariant();
+            if (normalized == "asc")
+                return AppDbContext.Departments.OrderBy(d => d.Capacity).ToList();
+
+            if (normalized == "desc")
+                return AppDbContext.Departments.OrderByDescending(d => d.Capacity).ToList();
+
+            throw new ArgumentException("Order must be 'asc' or 'desc'.", nameof(input));
+        }
+    }
+}

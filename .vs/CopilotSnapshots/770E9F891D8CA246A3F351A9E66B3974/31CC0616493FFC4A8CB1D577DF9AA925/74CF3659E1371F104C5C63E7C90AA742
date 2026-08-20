@@ -1,0 +1,39 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class DepartmentRepository : BaseRepository<Department>, IDepartmentRepository
+    {
+        public List<Department> SearchByName(string text)
+        {
+            if (text == null)
+                return new List<Department>();
+
+            text = text.Trim();
+            if (string.IsNullOrWhiteSpace(text))
+                return new List<Department>();
+
+            return AppDbContext.Departments
+                .Where(d => !string.IsNullOrWhiteSpace(d.Name) && d.Name.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0)
+                .ToList();
+        }
+
+        /// <summary>
+        /// Возвращает список отделов, отсортированный по вместимости.
+        /// По умолчанию сортировка по убыванию (descending = true).
+        /// </summary>
+        public List<Department> GetSortedByCapacity(bool descending = true)
+        {
+            var query = AppDbContext.Departments.AsQueryable();
+            return (descending
+                ? query.OrderByDescending(d => d.Capacity)
+                : query.OrderBy(d => d.Capacity))
+                .ToList();
+        }
+    }
+}

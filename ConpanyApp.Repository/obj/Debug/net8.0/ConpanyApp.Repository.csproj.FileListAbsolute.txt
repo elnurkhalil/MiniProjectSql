@@ -1,0 +1,16 @@
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\bin\Debug\net8.0\ConpanyApp.Repository.deps.json
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\bin\Debug\net8.0\ConpanyApp.Repository.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\bin\Debug\net8.0\ConpanyApp.Repository.pdb
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ConpanyApp.Repository.csproj.AssemblyReference.cache
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ConpanyApp.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ConpanyApp.Repository.AssemblyInfoInputs.cache
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ConpanyApp.Repository.AssemblyInfo.cs
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ConpanyApp.Repository.csproj.CoreCompileInputs.cache
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ConpanyApp.Repository.sourcelink.json
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ConpanyA.60933EEA.Up2Date
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ConpanyApp.Repository.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\refint\ConpanyApp.Repository.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ConpanyApp.Repository.pdb
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\obj\Debug\net8.0\ref\ConpanyApp.Repository.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\bin\Debug\net8.0\CompanyApp.Domain.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Repository\bin\Debug\net8.0\CompanyApp.Domain.pdb

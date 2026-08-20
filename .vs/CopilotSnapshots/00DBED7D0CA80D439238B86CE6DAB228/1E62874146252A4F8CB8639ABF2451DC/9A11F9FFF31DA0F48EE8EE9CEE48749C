@@ -1,0 +1,86 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    {
+        public List<T> GetAll()
+        {
+
+            if (typeof(T) == typeof(Department))
+                return AppDbContext.Departments.Select(d => (T)(object)d).ToList();
+
+            if (typeof(T) == typeof(Employee))
+                return AppDbContext.Employees.Select(e => (T)(object)e).ToList();
+
+            return new List<T>();
+        }
+
+        
+        public T GetById(int id)
+        {
+            return GetAll().FirstOrDefault(e => e.Id == id);
+        }
+
+        public void Create(T entity)
+        {
+            if (entity is Department department)
+            {
+                department.Id = AppDbContext.GetNextDepartmentId();
+                AppDbContext.Departments.Add(department);
+            }
+
+            if (entity is Employee employee)
+            {
+                employee.Id = AppDbContext.GetNextEmployeeId();
+                AppDbContext.Employees.Add(employee);
+            }
+
+        }
+
+        public void Edit(T entity)
+        {
+            if (entity is Department department)
+            {
+                var existing = AppDbContext.Departments.FirstOrDefault(d => d.Id == department.Id);
+                    existing.Name = department.Name;
+                    existing.Capacity = department.Capacity;
+            }
+
+            if (entity is Employee employee)
+            {
+                var existing = AppDbContext.Employees.FirstOrDefault(e => e.Id == employee.Id);
+                    existing.Name = employee.Name;
+                    existing.Surname = employee.Surname;
+                    existing.Age = employee.Age;
+                    existing.Address = employee.Address;
+            }
+        }
+
+
+
+        public void Delete(int id)
+        {
+            if (typeof(T) == typeof(Department))
+            {
+                var department = AppDbContext.Departments.FirstOrDefault(d => d.Id == id);
+                AppDbContext.Departments.Remove(department);
+
+            }
+
+            if (typeof(T) == typeof(Employee))
+            {
+                var employee = AppDbContext.Employees.FirstOrDefault(e => e.Id == id);
+                AppDbContext.Employees.Remove(employee);
+
+            }
+        }
+    }
+}

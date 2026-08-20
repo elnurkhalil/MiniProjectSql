@@ -1,0 +1,60 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Interfaces;
+using ConpanyApp.Service.Services.Interfaces;
+using System;
+using System.Collections.Generic;
+
+namespace ConpanyApp.Service.Services
+{
+    public class DepartmentService : IDepartmentService
+    {
+        private readonly IDepartmentRepository _departmentRepository;
+
+        public DepartmentService(IDepartmentRepository departmentRepository)
+        {
+            _departmentRepository = departmentRepository ?? throw new ArgumentNullException(nameof(departmentRepository));
+        }
+
+        public List<Department> GetAll() => _departmentRepository.GetAll();
+
+        public Department GetById(int id) => _departmentRepository.GetById(id);
+
+        public void Create(Department department)
+        {
+            if (department == null)
+                throw new ArgumentNullException(nameof(department));
+
+            // Basic validations delegated to repository as well, but keep guard here
+            if (string.IsNullOrWhiteSpace(department.Name))
+                throw new ArgumentException("Department name must be provided.", nameof(department));
+
+            if (department.Capacity < 0)
+                throw new ArgumentOutOfRangeException(nameof(department.Capacity), "Department capacity must be non-negative.");
+
+            _departmentRepository.Create(department);
+        }
+
+        public void Edit(Department department)
+        {
+            if (department == null)
+                throw new ArgumentNullException(nameof(department));
+
+            if (department.Id <= 0)
+                throw new ArgumentOutOfRangeException(nameof(department.Id), "Department id must be greater than zero.");
+
+            _departmentRepository.Edit(department);
+        }
+
+        public void Delete(int id)
+        {
+            if (id <= 0)
+                throw new ArgumentOutOfRangeException(nameof(id), "Id must be greater than zero.");
+
+            _departmentRepository.Delete(id);
+        }
+
+        public List<Department> SearchByName(string text) => _departmentRepository.SearchByName(text);
+
+        public List<Department> GetSortedByCapacity(string order) => _departmentRepository.GetSortedByCapacity(order);
+    }
+}

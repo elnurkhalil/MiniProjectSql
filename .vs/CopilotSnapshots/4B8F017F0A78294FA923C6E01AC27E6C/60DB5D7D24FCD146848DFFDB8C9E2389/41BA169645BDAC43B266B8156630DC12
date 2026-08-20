@@ -1,0 +1,48 @@
+﻿using CompanyApp.Domain.Entities;
+using CompanyApp.Repository.Data;
+using CompanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public abstract class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    {
+        protected abstract List<T> GetSource();
+
+        public List<T> GetAll()
+        {
+            return GetSource();
+        }
+
+        public T? GetById(int id)
+        {
+            return GetSource().FirstOrDefault(e => e.Id == id);
+        }
+
+        public void Create(T entity)
+        {
+            var source = GetSource();
+            if (entity.Id == 0)
+            {
+                entity.Id = source.Count > 0 ? source.Max(x => x.Id) + 1 : 1;
+            }
+            source.Add(entity);
+        }
+
+        public void Delete(int id)
+        {
+            var entity = GetById(id);
+            if (entity != null)
+            {
+                GetSource().Remove(entity);
+            }
+        }
+
+        public abstract void Edit(T entity);
+    }
+
+}

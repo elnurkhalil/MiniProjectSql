@@ -1,0 +1,38 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class EmployeeRepository : BaseRepository<Employee>, IEmployeeRepository
+    {
+        public List<Employee> GetByAge(int age)
+        {
+            
+        }
+
+        public List<Employee> GetByDepartmentId(int departmentId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Employee> GetByDepartmentName(string departmentName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Employee> SearchByNameOrSurname(string text)
+        {
+            if(text == null)
+            {
+                return AppDbContext.Departments()
+            }
+            return AppDbContext.Departments.Where()
+        }
+    }
+}

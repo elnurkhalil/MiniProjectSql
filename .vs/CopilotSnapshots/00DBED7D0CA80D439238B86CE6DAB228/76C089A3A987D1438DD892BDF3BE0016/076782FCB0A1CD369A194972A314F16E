@@ -1,0 +1,64 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class EmployeeRepository : BaseRepository<Employee>, IEmployeeRepository
+    {
+        private readonly AppDbContext _context;
+
+        public EmployeeRepository(AppDbContext context) : base(context)
+        {
+            _context = context;
+        }
+
+        protected override DbSet<Employee> GetSource() => _context.Employees;
+
+        public override void Edit(Employee entity)
+        {
+            var existing = GetById(entity.Id);
+            if (existing == null) return;
+
+            existing.Name = entity.Name;
+            existing.Surname = entity.Surname;
+            existing.Age = entity.Age;
+            existing.DepartmentId = entity.DepartmentId; 
+        }
+
+        public List<Employee> GetByAge(int age)
+        {
+            return _context.Employees
+                .Where(e => e.Age == age)
+                .ToList();
+        }
+
+        public List<Employee> GetByDepartmentId(int departmentId)
+        {
+            return _context.Employees
+                .Where(e => e.DepartmentId == departmentId)
+                .ToList();
+        }
+
+        public List<Employee> GetByDepartmentName(string departmentName)
+        {
+            return _context.Employees
+                .Where(e => e.Department.Name == departmentName)
+                .ToList();
+        }
+
+        public List<Employee> SearchByNameOrSurname(string text)
+        {
+            return _context.Employees
+                .Where(e => e.Name.Contains(text) || e.Surname.Contains(text))
+                .ToList();
+        }
+
+        public int GetEmployeeCount() => _context.Employees.Count();
+    }
+}

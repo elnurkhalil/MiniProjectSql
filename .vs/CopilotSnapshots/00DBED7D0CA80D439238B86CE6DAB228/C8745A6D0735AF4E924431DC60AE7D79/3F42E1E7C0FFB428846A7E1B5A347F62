@@ -1,0 +1,120 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ConpanyApp.Service.Exceptions;
+using ConpanyApp.Service.Helpers.Constants;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    {
+        public List<T> GetAll()
+        {
+            if (typeof(T) == typeof(Department))
+                return AppDbContext.Departments.Cast<T>().ToList();
+
+            if (typeof(T) == typeof(Employee))
+                return AppDbContext.Employees.Cast<T>().ToList();
+
+            return new List<T>();
+        }
+
+        
+        public T? GetById(int id)
+        {
+            return GetAll().FirstOrDefault(e => e.Id == id);
+        }
+
+        public void Create(T entity)
+        {
+            if (entity is Department department)
+            {
+                if (department.Id <= 0)
+                    department.Id = AppDbContext.GetNextDepartmentId();
+
+                AppDbContext.Departments.Add(department);
+                return;
+            }
+
+            if (entity is Employee employee)
+            {
+                if (employee.Id <= 0)
+                    employee.Id = AppDbContext.GetNextEmployeeId();
+
+                AppDbContext.Employees.Add(employee);
+                return;
+            }
+
+            // Unknown type - ignore
+        }
+
+        public void Edit(T entity)
+        {
+            if (entity is Department department)
+            {
+                var existing = AppDbContext.Departments.FirstOrDefault(d => d.Id == department.Id);
+                if (existing == null)
+                    return;
+
+                if (!string.IsNullOrWhiteSpace(department.Name))
+                    existing.Name = department.Name;
+
+                if (department.Capacity > 0)
+                    existing.Capacity = department.Capacity;
+
+                return;
+            }
+
+            if (entity is Employee employee)
+            {
+                var existing = AppDbContext.Employees.FirstOrDefault(e => e.Id == employee.Id);
+                if (existing == null)
+                    return;
+
+                existing.Name = employee.Name;
+                existing.Surname = employee.Surname;
+                existing.Age = employee.Age;
+                existing.Address = employee.Address;
+                if (employee.Department != null)
+                {
+                    var dept = AppDbContext.Departments.FirstOrDefault(d => d.Id == employee.Department.Id);
+                    existing.Department = dept ?? employee.Department;
+                }
+
+                return;
+            }
+
+            // Unknown type - ignore
+        }
+
+
+
+        public void Delete(int id)
+        {
+            if (typeof(T) == typeof(Department))
+            {
+                var department = AppDbContext.Departments.FirstOrDefault(d => d.Id == id);
+                if (department != null)
+                    AppDbContext.Departments.Remove(department);
+
+                return;
+            }
+
+            if (typeof(T) == typeof(Employee))
+            {
+                var employee = AppDbContext.Employees.FirstOrDefault(e => e.Id == id);
+                if (employee != null)
+                    AppDbContext.Employees.Remove(employee);
+
+                return;
+            }
+
+            // Unknown type - ignore
+        }
+    }
+}

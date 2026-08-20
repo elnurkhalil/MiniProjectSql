@@ -1,0 +1,63 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    {
+        public List<T> GetAll()
+        {
+            if (typeof(T) == typeof(Department))
+                return (AppDbContext.Departments as List<T>)!;
+
+            if (typeof(T) == typeof(Employee))
+                return (AppDbContext.Employees as List<T>)!;
+
+            return new List<T>();
+        }
+
+        
+        public T? GetById(int id)
+        {
+            return GetAll().FirstOrDefault(e => e.Id == id);
+        }
+
+        public void Add(T entity)
+        {
+            if (entity is Department department)
+            {
+                AppDbContext.Departments.Add(department);
+            }
+            else if (entity is Employee employee)
+            {
+                AppDbContext.Employees.Add(employee);
+            }
+        }
+
+        public void Delete(int id)
+        {
+            if (typeof(T) == typeof(Department))
+            {
+                var department = AppDbContext.Departments.FirstOrDefault(d => d.Id == id);
+                if (department != null)
+                {
+                    AppDbContext.Departments.Remove(department);
+                }
+            }
+            else if (typeof(T) == typeof(Employee))
+            {
+                var employee = AppDbContext.Employees.FirstOrDefault(e => e.Id == id);
+                if (employee != null)
+                {
+                    AppDbContext.Employees.Remove(employee);
+                }
+            }
+        }
+    }
+}

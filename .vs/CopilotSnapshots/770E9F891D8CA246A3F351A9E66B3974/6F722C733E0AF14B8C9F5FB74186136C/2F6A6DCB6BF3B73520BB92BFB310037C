@@ -1,0 +1,143 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    {
+        public List<T> GetAll()
+        {
+            if (typeof(T) == typeof(Department))
+                return AppDbContext.Departments.Cast<T>().ToList();
+
+            if (typeof(T) == typeof(Employee))
+                return AppDbContext.Employees.Cast<T>().ToList();
+
+            return new List<T>();
+        }
+
+        
+        public T GetById(int id)
+        {
+            if (id <= 0)
+                throw new ArgumentOutOfRangeException(nameof(id), "Id must be greater than zero.");
+
+            var entity = GetAll().FirstOrDefault(e => e.Id == id);
+            if (entity == null)
+                throw new KeyNotFoundException($"Entity of type {typeof(T).Name} with id {id} not found.");
+
+            return entity;
+        }
+
+        public void Create(T entity)
+        {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity));
+            if (entity is Department department)
+            {
+                if (department.Id <= 0)
+                    department.Id = AppDbContext.GetNextDepartmentId();
+
+                AppDbContext.Departments.Add(department);
+                return;
+            }
+
+            if (entity is Employee employee)
+            {
+                if (string.IsNullOrWhiteSpace(employee.Name) || string.IsNullOrWhiteSpace(employee.Surname))
+                    throw new ArgumentException("Employee name and surname must be provided.");
+
+                if (employee.Name.Any(char.IsDigit) || employee.Surname.Any(char.IsDigit))
+                    throw new ArgumentException("Employee name and surname must not contain digits.");
+
+                if (employee.Id <= 0)
+                    employee.Id = AppDbContext.GetNextEmployeeId();
+
+                AppDbContext.Employees.Add(employee);
+                return;
+            }
+
+            throw new InvalidOperationException($"Create is not supported for type {typeof(T).Name}.");
+        }
+
+        public void Edit(T entity)
+        {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity));
+
+            if (entity is Department department)
+            {
+                var existing = AppDbContext.Departments.FirstOrDefault(d => d.Id == department.Id);
+                if (existing == null)
+                    throw new KeyNotFoundException($"Department with id {department.Id} not found.");
+
+                existing.Name = department.Name;
+                existing.Capacity = department.Capacity;
+                return;
+            }
+
+            if (entity is Employee employee)
+            {
+                if (string.IsNullOrWhiteSpace(employee.Name) || string.IsNullOrWhiteSpace(employee.Surname))
+                    throw new ArgumentException("Employee name and surname must be provided.");
+
+                if (employee.Name.Any(char.IsDigit) || employee.Surname.Any(char.IsDigit))
+                    throw new ArgumentException("Employee name and surname must not contain digits.");
+
+                var existing = AppDbContext.Employees.FirstOrDefault(e => e.Id == employee.Id);
+                if (existing == null)
+                    throw new KeyNotFoundException($"Employee with id {employee.Id} not found.");
+
+                existing.Name = employee.Name;
+                existing.Surname = employee.Surname;
+                existing.Age = employee.Age;
+                existing.Address = employee.Address;
+                if (employee.Department != null)
+                {
+                    var dept = AppDbContext.Departments.FirstOrDefault(d => d.Id == employee.Department.Id);
+                    existing.Department = dept ?? employee.Department;
+                }
+
+                return;
+            }
+
+            throw new InvalidOperationException($"Edit is not supported for type {typeof(T).Name}.");
+        }
+
+
+
+        public void Delete(int id)
+        {
+            if (id <= 0)
+                throw new ArgumentOutOfRangeException(nameof(id), "Id must be greater than zero.");
+
+            if (typeof(T) == typeof(Department))
+            {
+                var department = AppDbContext.Departments.FirstOrDefault(d => d.Id == id);
+                if (department == null)
+                    throw new KeyNotFoundException($"Department with id {id} not found.");
+
+                AppDbContext.Departments.Remove(department);
+                return;
+            }
+
+            if (typeof(T) == typeof(Employee))
+            {
+                var employee = AppDbContext.Employees.FirstOrDefault(e => e.Id == id);
+                if (employee == null)
+                    throw new KeyNotFoundException($"Employee with id {id} not found.");
+
+                AppDbContext.Employees.Remove(employee);
+                return;
+            }
+
+            throw new InvalidOperationException($"Delete is not supported for type {typeof(T).Name}.");
+        }
+    }
+}

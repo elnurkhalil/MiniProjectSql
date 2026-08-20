@@ -1,0 +1,141 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Service.Exceptions;
+using ConpanyApp.Service.Helpers.Constants;
+using ConpanyApp.Repository.Interfaces;
+using ConpanyApp.Service.Services.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConpanyApp.Service.Services
+{
+    public class DepartmentService : IDepartmentService
+    {
+        private readonly IDepartmentRepository _departmentRepository;
+
+        public DepartmentService(IDepartmentRepository departmentRepository)
+        {
+            _departmentRepository = departmentRepository ?? throw new ValidationException("departmentRepository must not be null.");
+        }
+
+        public List<Department> GetAll() => _departmentRepository.GetAll();
+
+        public void Create(Department department)
+        {
+            if (department == null)
+                throw new ValidationException(Messages.DepartmentMustNotBeNull);
+
+            if (department.Name.Any(char.IsDigit))
+                throw new ValidationException(Messages.DepartmentNameNoDigits);
+
+            if (string.IsNullOrWhiteSpace(department.Name))
+                throw new ValidationException(Messages.DepartmentNameRequired);
+
+            if (department.Capacity < 0)
+                throw new ValidationException(Messages.DepartmentCapacityNonNegative);
+            _departmentRepository.Create(department);
+        }
+        public void Edit(Department department)
+        {
+            if (department == null)
+                throw new ValidationException(Messages.DepartmentMustNotBeNull);
+
+            if (department.Id <= 0)
+                throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+
+            var existing = _departmentRepository.GetById(department.Id);
+            if (existing == null)
+                throw new NotFoundException(string.Format(Messages.DepartmentNotFound, department.Id));
+
+            if (!string.IsNullOrWhiteSpace(department.Name))
+            {
+                if (department.Name.Any(char.IsDigit))
+                    throw new ValidationException(Messages.DepartmentNameNoDigits);
+
+                existing.Name = department.Name;
+            }
+
+            if (department.Capacity != null)
+            {
+                if (department.Capacity < 0)
+                    throw new ValidationException(Messages.DepartmentCapacityNonNegative);
+
+                existing.Capacity = department.Capacity.Value;
+            }
+
+            _departmentRepository.Edit(existing);
+        }
+
+        public void Edit(Department department, string? capacityInput)
+        {
+            if (department == null)
+                throw new ValidationException(Messages.DepartmentMustNotBeNull);
+
+            if (department.Id <= 0)
+                throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+
+            var existing = _departmentRepository.GetById(department.Id);
+            if (existing == null)
+                throw new NotFoundException(string.Format(Messages.DepartmentNotFound, department.Id));
+
+            if (string.IsNullOrWhiteSpace(department.Name))
+            {
+                department.Name = existing.Name;
+            }
+            else
+            {
+                if (department.Name.Any(char.IsDigit))
+                    throw new ValidationException(Messages.DepartmentNameNoDigits);
+            }
+
+            if (string.IsNullOrWhiteSpace(capacityInput))
+            {
+                department.Capacity = existing.Capacity;
+            }
+            else
+            {
+                var trimmed = capacityInput.Trim();
+                if (trimmed.Any(c => !char.IsDigit(c)))
+                    throw new ValidationException(Messages.DepartmentCapacityInvalidNumber);
+
+                if (!int.TryParse(trimmed, out var parsed))
+                    throw new ValidationException(Messages.DepartmentCapacityInvalidNumber);
+
+                if (parsed < 0)
+                    throw new ValidationException(Messages.DepartmentCapacityNonNegative);
+
+                department.Capacity = parsed;
+            }
+
+            _departmentRepository.Edit(department);
+        }
+        public Department GetById(int id)
+        {
+            if (id <= 0)
+                throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+
+            var dept = _departmentRepository.GetById(id);
+            if (dept == null)
+                throw new NotFoundException(string.Format(Messages.DepartmentNotFound, id));
+
+            return dept;
+        }
+
+
+        public void Delete(int id)
+        {
+            if (id <= 0)
+                throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+            var existing = _departmentRepository.GetById(id);
+
+            if (existing == null)
+                throw new NotFoundException(string.Format(Messages.DepartmentNotFound, id));
+
+            _departmentRepository.Delete(id);
+        }
+
+        public List<Department> SearchByName(string text) => _departmentRepository.SearchByName(text);
+
+        public List<Department> GetSortedByCapacity(string order) => _departmentRepository.GetSortedByCapacity(order);
+    }
+}

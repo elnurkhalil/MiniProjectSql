@@ -1,0 +1,44 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Repository.Data;
+using ConpanyApp.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConpanyApp.Repository.Repositories
+{
+    public class DepartmentRepository : BaseRepository<Department>, IDepartmentRepository
+    {
+        public List<Department> SearchByName(string text)
+        {
+            return AppDbContext.Departments
+                .Where(d => !string.IsNullOrWhiteSpace(d.Name) && d.Name.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0)
+                .ToList();
+        }
+
+        public List<Department> GetSortedByCapacity(string order)
+        {
+            if (string.IsNullOrWhiteSpace(order))
+                return AppDbContext.Departments.ToList();
+
+            var normalized = order.Trim().ToLowerInvariant();
+            if (normalized == "asc" || normalized == "ascending")
+            {
+                // place null capacities at the end for ascending
+                return AppDbContext.Departments
+                    .OrderBy(d => d.Capacity.HasValue ? d.Capacity.Value : int.MaxValue)
+                    .ToList();
+            }
+
+            if (normalized == "desc" || normalized == "descending")
+            {
+                // place null capacities at the end for descending as well
+                return AppDbContext.Departments
+                    .OrderByDescending(d => d.Capacity.HasValue ? d.Capacity.Value : int.MinValue)
+                    .ToList();
+            }
+
+            return AppDbContext.Departments.ToList();
+        }
+    }
+}

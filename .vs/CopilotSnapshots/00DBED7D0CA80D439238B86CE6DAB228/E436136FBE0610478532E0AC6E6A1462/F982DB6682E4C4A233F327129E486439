@@ -1,0 +1,18 @@
+﻿using ConpanyApp.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConpanyApp.Repository.Interfaces
+{
+    public interface IDepartmentRepository : IBaseRepository<Department>
+    {
+        List<Department> SearchByName(string text);
+
+        // Returns departments sorted by capacity. order: "asc" or "desc" (case-insensitive).
+        // Repository does not perform validation or throw domain exceptions.
+        List<Department> GetSortedByCapacity(string order);
+    }
+}

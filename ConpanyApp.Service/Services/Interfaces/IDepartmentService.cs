@@ -1,0 +1,17 @@
+using CompanyApp.Domain.Entities;
+using CompanyApp.Domain.Enums;
+using System.Collections.Generic;
+
+namespace CompanyApp.Service.Services.Interfaces
+{
+    public interface IDepartmentService
+    {
+        List<Department> GetAll();
+        Department GetById(int id);
+        void Create(Department department);
+        void Edit(Department department, string? capacityInput);
+        void Delete(int id);
+        List<Department> SearchByName(string text);
+        List<Department> GetSortedByCapacity(SortDirection direction);
+    }
+}

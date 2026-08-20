@@ -1,0 +1,110 @@
+﻿using ConpanyApp.Domain.Entities;
+using ConpanyApp.Service.Exceptions;
+using ConpanyApp.Service.Helpers.Constants;
+using ConpanyApp.Repository.Interfaces;
+using ConpanyApp.Service.Services.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConpanyApp.Service.Services
+{
+    public class EmployeeService : IEmployeeService
+    {
+        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IDepartmentRepository _departmentRepository;
+
+        public EmployeeService(IEmployeeRepository employeeRepository, IDepartmentRepository departmentRepository)
+        {
+            _employeeRepository = employeeRepository ?? throw new ValidationException("employeeRepository must not be null.");
+            _departmentRepository = departmentRepository ?? throw new ValidationException("departmentRepository must not be null.");
+        }
+
+        public List<Employee> GetAll() => _employeeRepository.GetAll();
+
+        public Employee GetById(int id)
+        {
+            if (id <= 0)
+                throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+
+            var emp = _employeeRepository.GetById(id);
+            if (emp == null)
+                throw new NotFoundException(string.Format(Messages.EmployeeNotFound, id));
+
+            return emp;
+        }
+
+        public void Create(Employee employee)
+        {
+            ValidateEmployeeForCreate(employee);
+            _employeeRepository.Create(employee);
+        }
+
+        private void ValidateEmployeeForCreate(Employee employee)
+        {
+            if (employee == null)
+                throw new ValidationException("Employee must not be null.");
+
+            // последовательная валидация — ошибка бросается при первом несоответствии
+            if (string.IsNullOrWhiteSpace(employee.Name) || string.IsNullOrWhiteSpace(employee.Surname))
+                throw new ValidationException(Messages.EmployeeNameSurnameRequired);
+
+            if (employee.Name.Any(char.IsDigit) || employee.Surname.Any(char.IsDigit))
+                throw new ValidationException(Messages.EmployeeNameSurnameNoDigits);
+
+            if (employee.Department != null)
+            {
+                if (employee.Department.Id > 0)
+                {
+                    var dept = _departmentRepository.GetAll().Find(d => d.Id == employee.Department.Id);
+                    if (dept == null)
+                        throw new NotFoundException(string.Format(Messages.DepartmentNotFound, employee.Department.Id));
+
+                    employee.Department = dept;
+                }
+                else if (!string.IsNullOrWhiteSpace(employee.Department.Name))
+                {
+                    var found = _departmentRepository.SearchByName(employee.Department.Name);
+                    employee.Department = found.Count > 0 ? found[0] : employee.Department;
+                }
+            }
+        }
+
+        public void Edit(Employee employee)
+        {
+            if (employee == null)
+                throw new ValidationException("Employee must not be null.");
+
+            if (employee.Id <= 0)
+                throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+
+            var existing = _employeeRepository.GetById(employee.Id);
+            if (existing == null)
+                throw new NotFoundException(string.Format(Messages.EmployeeNotFound, employee.Id));
+
+            _employeeRepository.Edit(employee);
+        }
+
+        public void Delete(int id)
+        {
+            if (id <= 0)
+                throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+
+            var existing = _employeeRepository.GetById(id);
+            if (existing == null)
+                throw new NotFoundException(string.Format(Messages.EmployeeNotFound, id));
+
+            _employeeRepository.Delete(id);
+        }
+
+        public List<Employee> GetByAge(int age) => _employeeRepository.GetByAge(age);
+
+        public List<Employee> GetByDepartmentId(int departmentId) => _employeeRepository.GetByDepartmentId(departmentId);
+
+        public List<Employee> GetByDepartmentName(string departmentName) => _employeeRepository.GetByDepartmentName(departmentName);
+
+        public List<Employee> SearchByNameOrSurname(string text) => _employeeRepository.SearchByNameOrSurname(text);
+
+        public int GetEmployeeCount() => _employeeRepository.GetEmployeeCount();
+    }
+}

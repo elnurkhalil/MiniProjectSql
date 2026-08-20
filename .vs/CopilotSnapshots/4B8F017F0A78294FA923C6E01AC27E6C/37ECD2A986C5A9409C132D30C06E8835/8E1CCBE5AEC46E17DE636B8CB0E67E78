@@ -1,0 +1,225 @@
+﻿using System;
+using ConpanyApp.Repository.Repositories;
+using ConpanyApp.Service.Services;
+using ConpanyApp.Domain.Entities;
+using ConpanyApp.Service.Exceptions;
+
+class Program
+{
+    static void Main()
+    {
+        var deptRepo = new DepartmentRepository();
+        var empRepo = new EmployeeRepository();
+
+        var deptService = new DepartmentService(deptRepo);
+        var empService = new EmployeeService(empRepo, deptRepo);
+
+        while (true)
+        {
+            Console.WriteLine("--- Company App ---");
+            Console.WriteLine("1. Departments");
+            Console.WriteLine("2. Employees");
+            Console.WriteLine("0. Exit");
+            Console.Write("Select: ");
+            var key = Console.ReadLine();
+
+            try
+            {
+                if (key == "1")
+                    DepartmentsMenu(deptService);
+                else if (key == "2")
+                    EmployeesMenu(empService, deptService);
+                else if (key == "0")
+                    break;
+                else
+                    Console.WriteLine("Unknown option.");
+            }
+            catch (ValidationException ex)
+            {
+                Console.WriteLine($"Validation error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+
+            Console.WriteLine();
+        }
+    }
+
+    static void DepartmentsMenu(ConpanyApp.Service.Services.Interfaces.IDepartmentService deptService)
+    {
+        while (true)
+        {
+            Console.WriteLine("\n--- Departments ---");
+            Console.WriteLine("1. List all");
+            Console.WriteLine("2. Create");
+            Console.WriteLine("3. Edit");
+            Console.WriteLine("4. Delete");
+            Console.WriteLine("5. Search by name");
+            Console.WriteLine("6. Sort by capacity (asc/desc)");
+            Console.WriteLine("0. Back");
+            Console.Write("Select: ");
+            var key = Console.ReadLine();
+
+            if (key == "1")
+            {
+                var list = deptService.GetAll();
+                foreach (var d in list)
+                    Console.WriteLine($"Id:{d.Id} Name:{d.Name} Capacity:{d.Capacity}");
+            }
+            else if (key == "2")
+            {
+                Console.Write("Name: ");
+                var name = Console.ReadLine() ?? string.Empty;
+                Console.Write("Capacity: ");
+                int.TryParse(Console.ReadLine(), out var cap);
+                deptService.Create(new Department { Name = name, Capacity = cap });
+                Console.WriteLine("Created.");
+            }
+            else if (key == "3")
+            {
+                Console.Write("Id: ");
+                int.TryParse(Console.ReadLine(), out var id);
+                Console.Write("New name: ");
+                var name = Console.ReadLine() ?? string.Empty;
+                Console.Write("New capacity: ");
+                int.TryParse(Console.ReadLine(), out var cap);
+                deptService.Edit(new Department { Id = id, Name = name, Capacity = cap });
+                Console.WriteLine("Edited.");
+            }
+            else if (key == "4")
+            {
+                Console.Write("Id: ");
+                int.TryParse(Console.ReadLine(), out var id);
+                deptService.Delete(id);
+                Console.WriteLine("Deleted.");
+            }
+            else if (key == "5")
+            {
+                Console.Write("Text: ");
+                var text = Console.ReadLine() ?? string.Empty;
+                var found = deptService.SearchByName(text);
+                foreach (var d in found)
+                    Console.WriteLine($"Id:{d.Id} Name:{d.Name} Capacity:{d.Capacity}");
+            }
+            else if (key == "6")
+            {
+                Console.Write("Order (asc/desc): ");
+                var order = Console.ReadLine() ?? string.Empty;
+                var sorted = deptService.GetSortedByCapacity(order);
+                foreach (var d in sorted)
+                    Console.WriteLine($"Id:{d.Id} Name:{d.Name} Capacity:{d.Capacity}");
+            }
+            else if (key == "0")
+                break;
+            else
+                Console.WriteLine("Unknown option.");
+        }
+    }
+
+    static void EmployeesMenu(ConpanyApp.Service.Services.Interfaces.IEmployeeService empService, ConpanyApp.Service.Services.Interfaces.IDepartmentService deptService)
+    {
+        while (true)
+        {
+            Console.WriteLine("\n--- Employees ---");
+            Console.WriteLine("1. List all");
+            Console.WriteLine("2. Create");
+            Console.WriteLine("3. Edit");
+            Console.WriteLine("4. Delete");
+            Console.WriteLine("5. Get by age");
+            Console.WriteLine("6. Get by department id");
+            Console.WriteLine("7. Search by name or surname");
+            Console.WriteLine("8. Count");
+            Console.WriteLine("0. Back");
+            Console.Write("Select: ");
+            var key = Console.ReadLine();
+
+            if (key == "1")
+            {
+                var list = empService.GetAll();
+                foreach (var e in list)
+                    Console.WriteLine($"Id:{e.Id} Name:{e.Name} {e.Surname} Age:{e.Age} Dept:{e.Department?.Name}");
+            }
+            else if (key == "2")
+            {
+                Console.Write("Name: ");
+                var name = Console.ReadLine() ?? string.Empty;
+                Console.Write("Surname: ");
+                var surname = Console.ReadLine() ?? string.Empty;
+                Console.Write("Age: ");
+                int.TryParse(Console.ReadLine(), out var age);
+                Console.Write("Address: ");
+                var addr = Console.ReadLine() ?? string.Empty;
+                Console.Write("Department id (or 0 to skip): ");
+                int.TryParse(Console.ReadLine(), out var deptId);
+                Department? dept = null;
+                if (deptId > 0)
+                    dept = deptService.GetById(deptId);
+
+                empService.Create(new Employee { Name = name, Surname = surname, Age = age, Address = addr, Department = dept! });
+                Console.WriteLine("Created.");
+            }
+            else if (key == "3")
+            {
+                Console.Write("Id: ");
+                int.TryParse(Console.ReadLine(), out var id);
+                Console.Write("Name: ");
+                var name = Console.ReadLine() ?? string.Empty;
+                Console.Write("Surname: ");
+                var surname = Console.ReadLine() ?? string.Empty;
+                Console.Write("Age: ");
+                int.TryParse(Console.ReadLine(), out var age);
+                Console.Write("Address: ");
+                var addr = Console.ReadLine() ?? string.Empty;
+                Console.Write("Department id (or 0 to skip): ");
+                int.TryParse(Console.ReadLine(), out var deptId);
+                Department? dept = null;
+                if (deptId > 0)
+                    dept = deptService.GetById(deptId);
+
+                empService.Edit(new Employee { Id = id, Name = name, Surname = surname, Age = age, Address = addr, Department = dept! });
+                Console.WriteLine("Edited.");
+            }
+            else if (key == "4")
+            {
+                Console.Write("Id: ");
+                int.TryParse(Console.ReadLine(), out var id);
+                empService.Delete(id);
+                Console.WriteLine("Deleted.");
+            }
+            else if (key == "5")
+            {
+                Console.Write("Age: ");
+                int.TryParse(Console.ReadLine(), out var age);
+                var result = empService.GetByAge(age);
+                foreach (var e in result)
+                    Console.WriteLine($"Id:{e.Id} Name:{e.Name} {e.Surname} Age:{e.Age} Dept:{e.Department?.Name}");
+            }
+            else if (key == "6")
+            {
+                Console.Write("Department id: ");
+                int.TryParse(Console.ReadLine(), out var deptId);
+                var result = empService.GetByDepartmentId(deptId);
+                foreach (var e in result)
+                    Console.WriteLine($"Id:{e.Id} Name:{e.Name} {e.Surname} Age:{e.Age} Dept:{e.Department?.Name}");
+            }
+            else if (key == "7")
+            {
+                Console.Write("Text: ");
+                var text = Console.ReadLine() ?? string.Empty;
+                var result = empService.SearchByNameOrSurname(text);
+                foreach (var e in result)
+                    Console.WriteLine($"Id:{e.Id} Name:{e.Name} {e.Surname} Age:{e.Age} Dept:{e.Department?.Name}");
+            }
+            else if (key == "8")
+            {
+                Console.WriteLine($"Total employees: {empService.GetEmployeeCount()}");
+            }
+            else if (key == "0")
+                break;
+            else
+                Console.WriteLine("Unknown option.");
+        }
+    }
+}
