@@ -1,5 +1,5 @@
 using CompanyApp.Domain.Entities;
-using ConpanyApp.Service.Dtos;
+using ConpanyApp.Service.DTOs;
 
 namespace ConpanyApp.Service.Mappers
 {
