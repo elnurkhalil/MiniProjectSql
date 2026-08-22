@@ -95,7 +95,7 @@ namespace CompanyApp.Service.Services
             await _repository.EditAsync(employee);
         }
 
-        public async System.Threading.Tasks.Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
             if (id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
             var existing = await _repository.GetByIdAsync(id);

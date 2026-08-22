@@ -1,6 +1,6 @@
 using System;
 
-namespace ConpanyApp.Service.Dtos
+namespace ConpanyApp.Service.DTOs
 {
     public class CreateEmployeeDto
     {
