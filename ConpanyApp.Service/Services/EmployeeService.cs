@@ -18,15 +18,15 @@ namespace CompanyApp.Service.Services
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
-        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetAllAsync() => await _repository.GetAllAsync() ?? new System.Collections.Generic.List<Employee>();
+        public async Task<List<Employee>> GetAllAsync() => await _repository.GetAllAsync() ?? new List<Employee>();
 
-        public async System.Threading.Tasks.Task<Employee> GetByIdAsync(int id)
+        public async Task<Employee> GetByIdAsync(int id)
         {
             if (id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
             return await _repository.GetByIdAsync(id) ?? throw new NotFoundException(string.Format(Messages.EmployeeNotFound, id));
         }
 
-        public async System.Threading.Tasks.Task CreateAsync(Employee employee)
+        public async Task CreateAsync(Employee employee)
         {
             if (employee == null) throw new ValidationException(Messages.EmployeeNameSurnameRequired);
 
@@ -44,7 +44,7 @@ namespace CompanyApp.Service.Services
             await _repository.CreateAsync(employee);
         }
 
-        public async System.Threading.Tasks.Task EditAsync(Employee employee)
+        public async Task EditAsync(Employee employee)
         {
             if (employee == null) throw new ValidationException(Messages.EmployeeNameSurnameRequired);
             if (employee.Id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
@@ -103,20 +103,20 @@ namespace CompanyApp.Service.Services
             await _repository.DeleteAsync(id);
         }
 
-        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetByAgeAsync(int age) => await _repository.GetByAgeAsync(age) ?? new System.Collections.Generic.List<Employee>();
+        public async Task<List<Employee>> GetByAgeAsync(int age) => await _repository.GetByAgeAsync(age) ?? new List<Employee>();
 
-        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetByDepartmentIdAsync(int departmentId) => await _repository.GetByDepartmentIdAsync(departmentId) ?? new System.Collections.Generic.List<Employee>();
+        public async Task<List<Employee>> GetByDepartmentIdAsync(int departmentId) => await _repository.GetByDepartmentIdAsync(departmentId) ?? new List<Employee>();
 
-        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> SearchByNameOrSurnameAsync(string text) => await _repository.SearchByNameOrSurnameAsync(text) ?? new System.Collections.Generic.List<Employee>();
+        public async Task<List<Employee>> SearchByNameOrSurnameAsync(string text) => await _repository.SearchByNameOrSurnameAsync(text) ?? new List<Employee>();
 
-        public async System.Threading.Tasks.Task<int> GetEmployeeCountAsync() => await _repository.GetEmployeeCountAsync();
+        public async Task<int> GetEmployeeCountAsync() => await _repository.GetEmployeeCountAsync();
 
-        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetAllEmpByDepNameAsync(string departmentName)
+        public async Task<List<Employee>> GetAllEmpByDepNameAsync(string departmentName)
         {
             if (string.IsNullOrWhiteSpace(departmentName))
-                return new System.Collections.Generic.List<Employee>();
+                return new List<Employee>();
 
-            return await _repository.GetByDepartmentNameAsync(departmentName) ?? new System.Collections.Generic.List<Employee>();
+            return await _repository.GetByDepartmentNameAsync(departmentName) ?? new List<Employee>();
         }
     }
 }
