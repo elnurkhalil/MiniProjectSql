@@ -1,7 +1,6 @@
 ﻿using CompanyApp.ConsoleApp.Controllers;
 using CompanyApp.Domain.Entities;
 using CompanyApp.Service.Services;
-using ConpanyApp.Service.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;

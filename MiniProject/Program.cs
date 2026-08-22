@@ -1,8 +1,9 @@
-﻿using CompanyApp.ConsoleApp.Controllers;
+﻿using AutoMapper;
+using CompanyApp.ConsoleApp.Controllers;
 using CompanyApp.Repository.Repositories;
 using CompanyApp.Service.Exceptions;
+using CompanyApp.Service.Mappers;
 using CompanyApp.Service.Services;
-using ConpanyApp.Service.Services;
 using System;
 using System.Threading.Tasks;
 
@@ -13,8 +14,14 @@ class Program
         var deptRepo = new DepartmentRepository();
         var empRepo = new EmployeeRepository();
 
-        var deptService = new DepartmentService(deptRepo);
-        var empService = new EmployeeService(empRepo);
+        var mapperConfig = new MapperConfiguration(cfg =>
+        {
+            cfg.AddProfile<MappingProfile>();
+        });
+        IMapper mapper = mapperConfig.CreateMapper();
+
+        var deptService = new DepartmentService(deptRepo, mapper);
+        var empService = new EmployeeService(empRepo, deptRepo, mapper);
 
         var deptController = new DepartmentController(deptService);
         var empController = new EmployeeController(empService, deptService);

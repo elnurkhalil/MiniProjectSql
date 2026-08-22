@@ -13,8 +13,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConpanyApp.Domain\CompanyApp.Domain.csproj" />
-    <ProjectReference Include="..\ConpanyApp.Repository\CompanyApp.Repository.csproj" />
-    <ProjectReference Include="..\ConpanyApp.Service\CompanyApp.Service.csproj" />
+    <ProjectReference Include="..\CompanyApp.Repository\CompanyApp.Repository.csproj" />
+    <ProjectReference Include="..\CompanyApp.Service\CompanyApp.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,7 +2,6 @@
 using CompanyApp.Domain.Entities;
 using CompanyApp.Domain.Enums;
 using CompanyApp.Service.Services;
-using ConpanyApp.Service.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;

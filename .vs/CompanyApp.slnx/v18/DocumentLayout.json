@@ -3,88 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\mappers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\mappers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\dtos\\employee dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\dtos\\employee dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\companyapp.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\companyapp.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\dtos\\department dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\dtos\\department dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\companyapp.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\companyapp.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DF69EEF-18FB-B425-7B05-C9629E97C3D9}|MiniProject\\CompanyApp.Console.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\miniproject\\companyapp.console.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9DF69EEF-18FB-B425-7B05-C9629E97C3D9}|MiniProject\\CompanyApp.Console.csproj|solutionrelative:miniproject\\companyapp.console.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\services\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\services\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\services\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\services\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|solutionrelative:conpanyapp.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|solutionrelative:conpanyapp.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.domain\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|solutionrelative:conpanyapp.domain\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\data\\companycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\data\\companycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\data\\appdbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\data\\appdbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\helpers\\constants\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\helpers\\constants\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.domain\\companyapp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|solutionrelative:conpanyapp.domain\\companyapp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9DF69EEF-18FB-B425-7B05-C9629E97C3D9}|MiniProject\\CompanyApp.Console.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\miniproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,24 +39,88 @@
       "RelativeMoniker": "D:0:0:{9DF69EEF-18FB-B425-7B05-C9629E97C3D9}|MiniProject\\CompanyApp.Console.csproj|solutionrelative:miniproject\\controllers\\consolehelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.domain\\enums\\sortdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|solutionrelative:conpanyapp.domain\\enums\\sortdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Repository\\Interfaces\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.domain\\companyapp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DCDEFFA4-DA9D-4879-8D5B-142D75A3C855}|ConpanyApp.Domain\\CompanyApp.Domain.csproj|solutionrelative:conpanyapp.domain\\companyapp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\CompanyContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Repository\\Data\\CompanyContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.repository\\companyapp.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B34A274F-0D7D-4CE0-BB43-E73302E324B1}|ConpanyApp.Repository\\CompanyApp.Repository.csproj|solutionrelative:conpanyapp.repository\\companyapp.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\AppDbContex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Repository\\Data\\AppDbContex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DF69EEF-18FB-B425-7B05-C9629E97C3D9}|MiniProject\\CompanyApp.Console.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\miniproject\\companyapp.console.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9DF69EEF-18FB-B425-7B05-C9629E97C3D9}|MiniProject\\CompanyApp.Console.csproj|solutionrelative:miniproject\\companyapp.console.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Domain\\Entities\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|c:\\users\\asus vivobook\\onedrive\\\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\c# first mini project\\miniproject\\miniprojectsql\\conpanyapp.service\\companyapp.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8ADA4749-9DBC-46BB-B89C-A17F4F8B54A8}|ConpanyApp.Service\\CompanyApp.Service.csproj|solutionrelative:conpanyapp.service\\companyapp.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Domain\\Entities\\Department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\BaseEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Domain\\Entities\\BaseEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Mappers\\MappingProfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\Mappers\\MappingProfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Helpers\\Constants\\Messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\Helpers\\Constants\\Messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\DepartmentService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\Services\\DepartmentService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\EmployeeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\Services\\EmployeeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Repository\\Repositories\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\ValidationException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\Exceptions\\ValidationException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\NotFoundException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Service\\Exceptions\\NotFoundException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Enums\\SortDirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConpanyApp.Domain\\Enums\\SortDirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,349 +130,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Mappers\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\Mappers\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Mappers\\MappingProfile.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\Mappers\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T15:02:05.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeDto.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T15:00:10.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DepartmentDto.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T14:59:04.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Department.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Department.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Domain\\Entities\\Department.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Department.cs",
-              "RelativeToolTip": "ConpanyApp.Domain\\Entities\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T17:40:11.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Employee.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Domain\\Entities\\Employee.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Employee.cs",
-              "RelativeToolTip": "ConpanyApp.Domain\\Entities\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T17:06:44.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IDepartmentService.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T17:55:29.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IEmployeeService.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T01:41:29.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DepartmentService.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\DepartmentService.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\Services\\DepartmentService.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\DepartmentService.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\Services\\DepartmentService.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAiwH0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T18:30:35.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\Services\\EmployeeService.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\EmployeeService.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\Services\\EmployeeService.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAUwHkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T16:24:53.211Z",
-              "EditorCaption": ""
+              "Title": "CompanyApp.Console.csproj",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\CompanyApp.Console.csproj",
+              "RelativeDocumentMoniker": "MiniProject\\CompanyApp.Console.csproj",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\CompanyApp.Console.csproj",
+              "RelativeToolTip": "MiniProject\\CompanyApp.Console.csproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-21T17:11:23.006Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Domain\\Entities\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "ConpanyApp.Domain\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T17:06:28.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs",
-              "RelativeToolTip": "ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T17:15:17.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DepartmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs",
-              "RelativeToolTip": "ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T17:14:56.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Repositories\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\BaseRepository.cs",
-              "RelativeToolTip": "ConpanyApp.Repository\\Repositories\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T16:15:38.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IEmployeeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs",
-              "RelativeToolTip": "ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T17:13:40.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IDepartmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs",
-              "RelativeToolTip": "ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T17:56:39.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "IBaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IBaseRepository.cs",
               "RelativeDocumentMoniker": "ConpanyApp.Repository\\Interfaces\\IBaseRepository.cs",
               "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IBaseRepository.cs",
               "RelativeToolTip": "ConpanyApp.Repository\\Interfaces\\IBaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T17:14:48.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-11T17:14:48.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CompanyContext.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\CompanyContext.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Data\\CompanyContext.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\CompanyContext.cs",
-              "RelativeToolTip": "ConpanyApp.Repository\\Data\\CompanyContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T11:17:30.94Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "CompanyApp.Repository.csproj",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\CompanyApp.Repository.csproj",
+              "RelativeDocumentMoniker": "ConpanyApp.Repository\\CompanyApp.Repository.csproj",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\CompanyApp.Repository.csproj",
+              "RelativeToolTip": "ConpanyApp.Repository\\CompanyApp.Repository.csproj",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-21T17:11:28.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AppDbContex.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\AppDbContex.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Data\\AppDbContex.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\AppDbContex.cs",
-              "RelativeToolTip": "ConpanyApp.Repository\\Data\\AppDbContex.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T18:55:43.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ValidationException.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\ValidationException.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\Exceptions\\ValidationException.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\ValidationException.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\Exceptions\\ValidationException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T17:10:51.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "NotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\NotFoundException.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\Exceptions\\NotFoundException.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\NotFoundException.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\Exceptions\\NotFoundException.cs",
+              "DocumentIndex": 1,
+              "Title": "CompanyApp.Service.csproj",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\CompanyApp.Service.csproj",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\CompanyApp.Service.csproj",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\CompanyApp.Service.csproj",
+              "RelativeToolTip": "ConpanyApp.Service\\CompanyApp.Service.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T23:15:14.64Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-21T17:11:35.063Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Messages.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Helpers\\Constants\\Messages.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\Helpers\\Constants\\Messages.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Helpers\\Constants\\Messages.cs",
-              "RelativeToolTip": "ConpanyApp.Service\\Helpers\\Constants\\Messages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "IDepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\Services\\Interfaces\\IDepartmentService.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T16:48:18.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-11T17:55:29.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Program.cs",
-              "RelativeDocumentMoniker": "MiniProject\\Program.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Program.cs",
-              "RelativeToolTip": "MiniProject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T18:24:28.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "MiniProject\\Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "MiniProject\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAIBJwA8AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T14:46:31.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "MiniProject\\Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "MiniProject\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T14:39:58.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ConsoleHelpers.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\ConsoleHelpers.cs",
-              "RelativeDocumentMoniker": "MiniProject\\Controllers\\ConsoleHelpers.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\ConsoleHelpers.cs",
-              "RelativeToolTip": "MiniProject\\Controllers\\ConsoleHelpers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T14:37:23.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "SortDirection.cs",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Enums\\SortDirection.cs",
-              "RelativeDocumentMoniker": "ConpanyApp.Domain\\Enums\\SortDirection.cs",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Enums\\SortDirection.cs",
-              "RelativeToolTip": "ConpanyApp.Domain\\Enums\\SortDirection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T22:18:10.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 4,
               "Title": "CompanyApp.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\CompanyApp.Domain.csproj",
               "RelativeDocumentMoniker": "ConpanyApp.Domain\\CompanyApp.Domain.csproj",
@@ -480,47 +201,295 @@
               "RelativeToolTip": "ConpanyApp.Domain\\CompanyApp.Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-21T17:08:17.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-21T17:08:17.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CompanyContext.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\CompanyContext.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Data\\CompanyContext.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\CompanyContext.cs",
+              "RelativeToolTip": "ConpanyApp.Repository\\Data\\CompanyContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T11:17:30.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContex.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\AppDbContex.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Data\\AppDbContex.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Data\\AppDbContex.cs",
+              "RelativeToolTip": "ConpanyApp.Repository\\Data\\AppDbContex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T18:55:43.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Domain\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Employee.cs",
+              "RelativeToolTip": "ConpanyApp.Domain\\Entities\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T17:06:44.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Domain\\Entities\\Department.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\Department.cs",
+              "RelativeToolTip": "ConpanyApp.Domain\\Entities\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T17:40:11.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Domain\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "ConpanyApp.Domain\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T17:06:28.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Program.cs",
+              "RelativeDocumentMoniker": "MiniProject\\Program.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Program.cs",
+              "RelativeToolTip": "MiniProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T18:24:28.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "MiniProject\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "MiniProject\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T14:46:31.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "MiniProject\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "MiniProject\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T14:39:58.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConsoleHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\ConsoleHelpers.cs",
+              "RelativeDocumentMoniker": "MiniProject\\Controllers\\ConsoleHelpers.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\Controllers\\ConsoleHelpers.cs",
+              "RelativeToolTip": "MiniProject\\Controllers\\ConsoleHelpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T14:37:23.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Mappers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\Mappers\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Mappers\\MappingProfile.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\Mappers\\MappingProfile.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T15:02:05.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Messages.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Helpers\\Constants\\Messages.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\Helpers\\Constants\\Messages.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Helpers\\Constants\\Messages.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\Helpers\\Constants\\Messages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T16:48:18.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\Services\\DepartmentService.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\Services\\DepartmentService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAswDIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T18:30:35.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T16:24:53.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\Services\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T01:41:29.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DepartmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\DTOs\\Department DTOs\\DepartmentDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T14:59:04.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EmployeeDto.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\DTOs\\Employee DTOs\\EmployeeDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T15:00:10.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "ConpanyApp.Repository\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T17:15:17.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "ConpanyApp.Repository\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T17:14:56.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "ConpanyApp.Repository\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T16:15:38.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "ConpanyApp.Repository\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T17:13:40.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeToolTip": "ConpanyApp.Repository\\Interfaces\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T17:56:39.646Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "CompanyApp.Repository.csproj",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\CompanyApp.Repository.csproj",
-              "RelativeDocumentMoniker": "ConpanyApp.Repository\\CompanyApp.Repository.csproj",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\CompanyApp.Repository.csproj",
-              "RelativeToolTip": "ConpanyApp.Repository\\CompanyApp.Repository.csproj",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-21T17:11:28.473Z",
-              "EditorCaption": ""
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\Exceptions\\ValidationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T17:10:51.197Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "CompanyApp.Console.csproj",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\CompanyApp.Console.csproj",
-              "RelativeDocumentMoniker": "MiniProject\\CompanyApp.Console.csproj",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\MiniProject\\CompanyApp.Console.csproj",
-              "RelativeToolTip": "MiniProject\\CompanyApp.Console.csproj",
-              "ViewState": "AgIAAAgAAAAAAAAAAMBdwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-21T17:11:23.006Z",
-              "EditorCaption": ""
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Service\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "ConpanyApp.Service\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T23:15:14.64Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "CompanyApp.Service.csproj",
-              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\CompanyApp.Service.csproj",
-              "RelativeDocumentMoniker": "ConpanyApp.Service\\CompanyApp.Service.csproj",
-              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\CompanyApp.Service.csproj",
-              "RelativeToolTip": "ConpanyApp.Service\\CompanyApp.Service.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAACBjwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-21T17:11:35.063Z",
-              "EditorCaption": ""
+              "Title": "SortDirection.cs",
+              "DocumentMoniker": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Enums\\SortDirection.cs",
+              "RelativeDocumentMoniker": "ConpanyApp.Domain\\Enums\\SortDirection.cs",
+              "ToolTip": "C:\\Users\\asus vivobook\\OneDrive\\\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\Enums\\SortDirection.cs",
+              "RelativeToolTip": "ConpanyApp.Domain\\Enums\\SortDirection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T22:18:10.537Z"
             }
           ]
         }
