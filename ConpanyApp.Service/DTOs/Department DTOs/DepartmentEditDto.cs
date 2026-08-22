@@ -1,8 +1,6 @@
-using System;
-
-namespace ConpanyApp.Service.DTOs
+﻿namespace CompanyApp.Service.DTOs.Department_DTOs
 {
-    public class DepartmentResponseDto
+    public class DepartmentEditDto
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
