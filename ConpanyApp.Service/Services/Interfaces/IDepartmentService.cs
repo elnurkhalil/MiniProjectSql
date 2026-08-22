@@ -6,12 +6,12 @@ namespace CompanyApp.Service.Services.Interfaces
 {
     public interface IDepartmentService
     {
-        List<Department> GetAll();
-        Department GetById(int id);
-        void Create(Department department);
-        void Edit(Department department, string? capacityInput);
-        void Delete(int id);
-        List<Department> SearchByName(string text);
-        List<Department> GetSortedByCapacity(SortDirection direction);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Department>> GetAllAsync();
+        System.Threading.Tasks.Task<Department> GetByIdAsync(int id);
+        System.Threading.Tasks.Task CreateAsync(Department department);
+        System.Threading.Tasks.Task EditAsync(Department department, string? capacityInput);
+        System.Threading.Tasks.Task DeleteAsync(int id);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Department>> SearchByNameAsync(string text);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Department>> GetSortedByCapacityAsync(SortDirection direction);
     }
 }

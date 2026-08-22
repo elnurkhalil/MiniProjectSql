@@ -19,39 +19,43 @@ namespace CompanyApp.Repository.Repositories
             _context = new CompanyContext();
         }
 
-        public List<T> GetAll()
+        public async Task<List<T>> GetAllAsync()
         {
             var prop = typeof(T).GetProperty("Department");
             if (prop != null)
             {
-                return _context.Set<T>().Include("Department").ToList();
+                return await _context.Set<T>().Include("Department").ToListAsync();
             }
 
-            return _context.Set<T>().ToList();
+            return await _context.Set<T>().ToListAsync();
         }
 
-        public T? GetById(int id)
+        public async Task<T?> GetByIdAsync(int id)
         {
-            return _context.Set<T>().Find(id);
+            return await _context.Set<T>().FindAsync(id);
         }
 
-        public void Create(T entity)
+        public Task CreateAsync(T entity)
         {
             _context.Set<T>().Add(entity);
-            _context.SaveChanges();
+            return Task.CompletedTask;
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            var entity = _context.Set<T>().Find(id);
+            var entity = await _context.Set<T>().FindAsync(id);
             if (entity != null)
             {
                 _context.Set<T>().Remove(entity);
-                _context.SaveChanges();
             }
         }
 
-        public abstract void Edit(T entity);
+        public abstract Task EditAsync(T entity);
+
+        public Task SaveChangesAsync()
+        {
+            return _context.SaveChangesAsync();
+        }
     }
 
 }

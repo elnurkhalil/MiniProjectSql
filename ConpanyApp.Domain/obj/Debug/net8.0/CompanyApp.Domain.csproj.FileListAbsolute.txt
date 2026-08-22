@@ -10,3 +10,15 @@ C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C
 C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\refint\CompanyApp.Domain.dll
 C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\CompanyApp.Domain.pdb
 C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# Mini Project\MiniProject\ConpanyApp.Domain\obj\Debug\net8.0\ref\CompanyApp.Domain.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\bin\Debug\net8.0\CompanyApp.Domain.deps.json
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\bin\Debug\net8.0\CompanyApp.Domain.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\bin\Debug\net8.0\CompanyApp.Domain.pdb
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\obj\Debug\net8.0\CompanyApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\obj\Debug\net8.0\CompanyApp.Domain.AssemblyInfoInputs.cache
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\obj\Debug\net8.0\CompanyApp.Domain.AssemblyInfo.cs
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\obj\Debug\net8.0\CompanyApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\obj\Debug\net8.0\CompanyApp.Domain.sourcelink.json
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\obj\Debug\net8.0\CompanyApp.Domain.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\obj\Debug\net8.0\refint\CompanyApp.Domain.dll
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\obj\Debug\net8.0\CompanyApp.Domain.pdb
+C:\Users\asus vivobook\OneDrive\Изображения\Рабочий стол\C# first mini project\MiniProject\MiniProjectSql\ConpanyApp.Domain\obj\Debug\net8.0\ref\CompanyApp.Domain.dll

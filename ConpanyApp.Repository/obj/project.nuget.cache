@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/exnHk0JSiQ=",
+  "dgSpecHash": "RJeZR3kR2OQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Repository\\CompanyApp.Repository.csproj",
+  "projectFilePath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\CompanyApp.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus vivobook\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\asus vivobook\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

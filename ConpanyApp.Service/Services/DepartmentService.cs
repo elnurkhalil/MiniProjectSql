@@ -21,9 +21,9 @@ namespace ConpanyApp.Service.Services
             _repo = repo ?? throw new ArgumentNullException(nameof(repo));
         }
 
-        public List<Department> GetAll()
+        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Department>> GetAllAsync()
         {
-            var departments = _repo.GetAll();
+            var departments = await _repo.GetAllAsync();
 
             if (departments == null || departments.Count == 0)
             {
@@ -33,22 +33,22 @@ namespace ConpanyApp.Service.Services
             return departments;
         }
 
-        public Department GetById(int id)
+        public async System.Threading.Tasks.Task<Department> GetByIdAsync(int id)
         {
             if (id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
 
-            return _repo.GetById(id) ?? throw new NotFoundException(string.Format(Messages.DepartmentNotFound, id));
+            return await _repo.GetByIdAsync(id) ?? throw new NotFoundException(string.Format(Messages.DepartmentNotFound, id));
         }
 
-        public void Create(Department department)
+        public async System.Threading.Tasks.Task CreateAsync(Department department)
         {
             if (department == null)
                 throw new ValidationException(Messages.DepartmentMustNotBeNull);
 
             ValidateName(department.Name);
 
-            var isDuplicate = _repo.GetAll()?
-                .Any(d => d.Name.Equals(department.Name, StringComparison.OrdinalIgnoreCase)) ?? false;
+            var existingList = await _repo.GetAllAsync();
+            var isDuplicate = existingList?.Any(d => d.Name.Equals(department.Name, StringComparison.OrdinalIgnoreCase)) ?? false;
 
             if (isDuplicate)
             {
@@ -58,21 +58,21 @@ namespace ConpanyApp.Service.Services
             if (department.Capacity < 0)
                 throw new ValidationException(Messages.DepartmentCapacityNonNegative);
 
-            _repo.Create(department);
+            await _repo.CreateAsync(department);
         }
 
-        public void Edit(Department department, string? capacityInput)
+        public async System.Threading.Tasks.Task EditAsync(Department department, string? capacityInput)
         {
             if (department == null) throw new ValidationException(Messages.DepartmentMustNotBeNull);
 
-            var existing = GetById(department.Id);
+            var existing = await GetByIdAsync(department.Id);
 
             if (!string.IsNullOrWhiteSpace(department.Name))
             {
                 ValidateName(department.Name);
 
-                var isDuplicate = _repo.GetAll()?
-                    .Any(d => d.Id != department.Id && d.Name.Equals(department.Name, StringComparison.OrdinalIgnoreCase)) ?? false;
+                var existingList = await _repo.GetAllAsync();
+                var isDuplicate = existingList?.Any(d => d.Id != department.Id && d.Name.Equals(department.Name, StringComparison.OrdinalIgnoreCase)) ?? false;
 
                 if (isDuplicate)
                 {
@@ -90,28 +90,28 @@ namespace ConpanyApp.Service.Services
                 existing.Capacity = parsed;
             }
 
-            _repo.Edit(existing);
+            await _repo.EditAsync(existing);
         }
 
-        public void Delete(int id)
+        public async System.Threading.Tasks.Task DeleteAsync(int id)
         {
-            var existing = GetById(id);
-            _repo.Delete(id);
+            var existing = await GetByIdAsync(id);
+            await _repo.DeleteAsync(id);
         }
 
-        public List<Department> SearchByName(string text)
+        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Department>> SearchByNameAsync(string text)
         {
             if (string.IsNullOrWhiteSpace(text))
             {
-                return _repo.GetAll() ?? new List<Department>();
+                return await _repo.GetAllAsync() ?? new System.Collections.Generic.List<Department>();
             }
 
-            return _repo.SearchByName(text) ?? new List<Department>();
+            return await _repo.SearchByNameAsync(text) ?? new System.Collections.Generic.List<Department>();
         }
 
-        public List<Department> GetSortedByCapacity(SortDirection direction)
+        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Department>> GetSortedByCapacityAsync(SortDirection direction)
         {
-            return _repo.GetSortedByCapacity(direction) ?? new List<Department>();
+            return await _repo.GetSortedByCapacityAsync(direction) ?? new System.Collections.Generic.List<Department>();
         }
 
         private void ValidateName(string? name)

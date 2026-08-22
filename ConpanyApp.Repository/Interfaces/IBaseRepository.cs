@@ -9,10 +9,11 @@ namespace CompanyApp.Repository.Interfaces
 {
     public interface IBaseRepository<T> where T : BaseEntity
     {
-        List<T> GetAll();
-        T? GetById(int id);
-        void Create(T entity);
-        void Edit(T entity);
-        void Delete(int id);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<T>> GetAllAsync();
+        System.Threading.Tasks.Task<T?> GetByIdAsync(int id);
+        System.Threading.Tasks.Task CreateAsync(T entity);
+        System.Threading.Tasks.Task EditAsync(T entity);
+        System.Threading.Tasks.Task DeleteAsync(int id);
+        System.Threading.Tasks.Task SaveChangesAsync();
     }
 }

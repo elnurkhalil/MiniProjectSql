@@ -12,42 +12,17 @@ using System.Linq;
 
 class Program
 {
-    static void Main()
+    static async System.Threading.Tasks.Task Main()
     {
-        // --- EF Core connection check (создаёт БД и добавляет тестовую запись при первом запуске) ---
-        try
-        {
-            using var ef = new CompanyContext();
-            ef.Database.EnsureCreated();
-
-            if (!ef.Departments.Any())
-            {
-                var dept = new Department { Name = "EF_TestDept", Capacity = 10 };
-                ef.Departments.Add(dept);
-
-                var emp = new Employee
-                {
-                    Name = "EF_Test",
-                    Surname = "User",
-                    Age = 30,
-                    Address = "Local",
-                    Department = dept
-                };
-
-                ef.Employees.Add(emp);
-                ef.SaveChanges();
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("EF error: " + ex.Message);
-        }
 
         var deptRepo = new DepartmentRepository();
         var empRepo = new EmployeeRepository();
 
         var deptService = new DepartmentService(deptRepo);
         var empService = new EmployeeService(empRepo);
+
+        // (Ранее здесь создавалась схема БД через AppDbContext/CompanyContext.)
+        // Убираем автоматические действия при старте — создание/наполнение БД выполняйте вручную или через миграции.
 
         while (true)
         {
@@ -85,7 +60,7 @@ class Program
                 switch (key)
                 {
                     case "1":
-                        var depts = deptService.GetAll();
+                        var depts = await deptService.GetAllAsync();
                         if (!depts.Any()) 
                             Console.WriteLine("No departments found.");
                         foreach (var d in depts)
@@ -96,13 +71,13 @@ class Program
                         string dname = ReadString("Name: ", allowNumbers: false, allowPunctuation: false);
                         int newDCap = ReadNonNegativeInt("Capacity: ");
 
-                        deptService.Create(new Department { Name = dname, Capacity = newDCap });
+                        await deptService.CreateAsync(new Department { Name = dname, Capacity = newDCap });
                         Console.WriteLine("Department created successfully.");
                         break;
 
                     case "3":
                         var did = ReadPositiveInt("Department Id to edit: ");
-                        var existingDept = deptService.GetById(did);
+                        var existingDept = await deptService.GetByIdAsync(did);
 
                         if (existingDept == null)
                         {
@@ -130,15 +105,16 @@ class Program
                             Console.WriteLine("Please enter a valid non-negative integer.");
                         }
 
+
                         var deptToEdit = new Department { Id = existingDept.Id, Name = newDName, Capacity = existingDept.Capacity };
-                        deptService.Edit(deptToEdit, string.IsNullOrWhiteSpace(newDCapInput) ? null : newDCapInput);
+                        await deptService.EditAsync(deptToEdit, string.IsNullOrWhiteSpace(newDCapInput) ? null : newDCapInput);
 
                         Console.WriteLine("Department edited successfully.");
                         break;
 
                     case "4":
                         var delDid = ReadPositiveInt("Department Id to delete: ");
-                        deptService.Delete(delDid);
+                        await deptService.DeleteAsync(delDid);
                         Console.WriteLine("Department deleted successfully.");
                         break;
 
@@ -146,8 +122,8 @@ class Program
                         string text = ReadString("Search text (press Enter to show all): ", allowNumbers: false, allowEmpty: true);
 
                         var found = string.IsNullOrWhiteSpace(text)
-                            ? deptService.GetAll()            
-                            : deptService.SearchByName(text); 
+                            ? await deptService.GetAllAsync()            
+                            : await deptService.SearchByNameAsync(text); 
 
                         if (!found.Any())
                         {
@@ -171,13 +147,13 @@ class Program
                             Console.WriteLine("Invalid order. Defaulting to 'asc'.");
                         }
 
-                        var sorted = deptService.GetSortedByCapacity(dir);
+                        var sorted = await deptService.GetSortedByCapacityAsync(dir);
                         foreach (var d in sorted)
                             Console.WriteLine($"Id: {d.Id} | Name: {d.Name} | Capacity: {d.Capacity}");
                         break;
 
                     case "7":
-                        var emps = empService.GetAll();
+                        var emps = await empService.GetAllAsync();
                         if (!emps.Any()) Console.WriteLine("No employees found.");
                         foreach (var e in emps)
                             Console.WriteLine($"Id: {e.Id} | {e.Name} {e.Surname} | Age: {e.Age} | Dept: {e.Department?.Name ?? "None"}");
@@ -204,17 +180,17 @@ class Program
                         Department? dept = null;
                         if (deptId > 0)
                         {
-                            dept = deptService.GetById(deptId);
+                        dept = await deptService.GetByIdAsync(deptId);
                             if (dept == null) Console.WriteLine("Warning: Department not found. Employee will have no department.");
                         }
 
-                        empService.Create(new Employee { Name = name, Surname = surname, Age = age, Address = addr, Department = dept! });
+                        await empService.CreateAsync(new Employee { Name = name, Surname = surname, Age = age, Address = addr, Department = dept! });
                         Console.WriteLine("Employee created successfully.");
                         break;
 
                     case "9":
                         var id = ReadPositiveInt("Employee Id to edit: ");
-                        var existingEmp = empService.GetById(id);
+                        var existingEmp = await empService.GetByIdAsync(id);
 
                         if (existingEmp == null)
                         {
@@ -243,7 +219,7 @@ class Program
                         {
                             if (newDeptId > 0)
                             {
-                                finalDept = deptService.GetById(newDeptId);
+                                finalDept = await deptService.GetByIdAsync(newDeptId);
                             }
                             else
                             {
@@ -251,7 +227,7 @@ class Program
                             }
                         }
 
-                        empService.Edit(new Employee
+                        await empService.EditAsync(new Employee
                         {
                             Id = id,
                             Name = finalName,
@@ -265,13 +241,13 @@ class Program
                         break;
                     case "10":
                         var delId = ReadPositiveInt("Employee Id to delete: ");
-                        empService.Delete(delId);
+                        await empService.DeleteAsync(delId);
                         Console.WriteLine("Employee deleted successfully.");
                         break;
 
                     case "11":
                         var searchAge = ReadPositiveInt("Age: ");
-                        var byAge = empService.GetByAge(searchAge);
+                        var byAge = await empService.GetByAgeAsync(searchAge);
                         if (!byAge.Any()) Console.WriteLine("No employees found with this age.");
                         foreach (var e in byAge)
                             Console.WriteLine($"Id: {e.Id} | {e.Name} {e.Surname} | Age: {e.Age} | Dept: {e.Department?.Name ?? "None"}");
@@ -279,7 +255,7 @@ class Program
 
                     case "12":
                         var searchDeptId = ReadPositiveInt("Department id: ");
-                        var byDept = empService.GetByDepartmentId(searchDeptId);
+                        var byDept = await empService.GetByDepartmentIdAsync(searchDeptId);
                         if (!byDept.Any()) Console.WriteLine("No employees found in this department.");
                         foreach (var e in byDept)
                             Console.WriteLine($"Id: {e.Id} | {e.Name} {e.Surname} | Age: {e.Age} | Dept: {e.Department?.Name ?? "None"}");
@@ -287,18 +263,18 @@ class Program
 
                     case "13":
                         var stext = ReadString("Search text: ", allowEmpty: false);
-                        var se = empService.SearchByNameOrSurname(stext);
+                        var se = await empService.SearchByNameOrSurnameAsync(stext);
                         if (!se.Any()) Console.WriteLine("No employees found.");
                         foreach (var e in se)
                             Console.WriteLine($"Id: {e.Id} | {e.Name} {e.Surname} | Age: {e.Age} | Dept: {e.Department?.Name ?? "None"}");
                         break;
 
                     case "14":
-                        Console.WriteLine($"Total employees: {empService.GetEmployeeCount()}");
+                        Console.WriteLine($"Total employees: {await empService.GetEmployeeCountAsync()}");
                         break;
                     case "15":
                         var searchDeptIdById = ReadPositiveInt("Department Id: ");
-                        var deptResult = deptService.GetById(searchDeptIdById);
+                        var deptResult = await deptService.GetByIdAsync(searchDeptIdById);
 
                         if (deptResult == null)
                         {
@@ -312,7 +288,7 @@ class Program
 
                     case "16":
                         var searchEmpId = ReadPositiveInt("Employee Id: ");
-                        var empResult = empService.GetById(searchEmpId);
+                        var empResult = await empService.GetByIdAsync(searchEmpId);
 
                         if (empResult == null)
                         {
@@ -327,7 +303,7 @@ class Program
                     case "17":
                         var depName = ReadString("Department name: ", allowNumbers: true, allowEmpty: false);
 
-                        var empsByDepName = empService.GetAllEmpByDepName(depName);
+                        var empsByDepName = await empService.GetAllEmpByDepNameAsync(depName);
 
                         if (!empsByDepName.Any())
                         {

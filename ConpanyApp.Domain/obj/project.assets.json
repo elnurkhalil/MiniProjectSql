@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Domain\\CompanyApp.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\CompanyApp.Domain.csproj",
       "projectName": "CompanyApp.Domain",
-      "projectPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Domain\\CompanyApp.Domain.csproj",
+      "projectPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\CompanyApp.Domain.csproj",
       "packagesPath": "C:\\Users\\asus vivobook\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Domain\\obj\\",
+      "outputPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

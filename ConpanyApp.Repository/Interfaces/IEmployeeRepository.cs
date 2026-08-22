@@ -9,10 +9,10 @@ namespace CompanyApp.Repository.Interfaces
 {
     public interface IEmployeeRepository : IBaseRepository<Employee>
     {
-        List<Employee> GetByAge(int age);
-        List<Employee> GetByDepartmentId(int departmentId);
-        List<Employee> GetByDepartmentName(string departmentName);
-        List<Employee> SearchByNameOrSurname(string text);
-        int GetEmployeeCount();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetByAgeAsync(int age);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetByDepartmentIdAsync(int departmentId);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetByDepartmentNameAsync(string departmentName);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> SearchByNameOrSurnameAsync(string text);
+        System.Threading.Tasks.Task<int> GetEmployeeCountAsync();
     }
 }

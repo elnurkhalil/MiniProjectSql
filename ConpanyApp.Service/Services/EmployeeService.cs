@@ -18,15 +18,15 @@ namespace CompanyApp.Service.Services
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
-        public List<Employee> GetAll() => _repository.GetAll() ?? new List<Employee>();
+        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetAllAsync() => await _repository.GetAllAsync() ?? new System.Collections.Generic.List<Employee>();
 
-        public Employee GetById(int id)
+        public async System.Threading.Tasks.Task<Employee> GetByIdAsync(int id)
         {
             if (id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
-            return _repository.GetById(id) ?? throw new NotFoundException(string.Format(Messages.EmployeeNotFound, id));
+            return await _repository.GetByIdAsync(id) ?? throw new NotFoundException(string.Format(Messages.EmployeeNotFound, id));
         }
 
-        public void Create(Employee employee)
+        public async System.Threading.Tasks.Task CreateAsync(Employee employee)
         {
             if (employee == null) throw new ValidationException(Messages.EmployeeNameSurnameRequired);
 
@@ -41,15 +41,15 @@ namespace CompanyApp.Service.Services
             if (employee.Age < 18 || employee.Age > 65)
                 throw new ValidationException(Messages.EmployeeAgeRestriction);
 
-            _repository.Create(employee);
+            await _repository.CreateAsync(employee);
         }
 
-        public void Edit(Employee employee)
+        public async System.Threading.Tasks.Task EditAsync(Employee employee)
         {
             if (employee == null) throw new ValidationException(Messages.EmployeeNameSurnameRequired);
             if (employee.Id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
 
-            var existing = _repository.GetById(employee.Id);
+            var existing = await _repository.GetByIdAsync(employee.Id);
             if (existing == null) throw new NotFoundException(string.Format(Messages.EmployeeNotFound, employee.Id));
 
             if (string.IsNullOrWhiteSpace(employee.Name))
@@ -92,31 +92,31 @@ namespace CompanyApp.Service.Services
                 employee.Department = existing.Department;
             }
 
-            _repository.Edit(employee);
+            await _repository.EditAsync(employee);
         }
 
-        public void Delete(int id)
+        public async System.Threading.Tasks.Task DeleteAsync(int id)
         {
             if (id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
-            var existing = _repository.GetById(id);
+            var existing = await _repository.GetByIdAsync(id);
             if (existing == null) throw new NotFoundException(string.Format(Messages.EmployeeNotFound, id));
-            _repository.Delete(id);
+            await _repository.DeleteAsync(id);
         }
 
-        public List<Employee> GetByAge(int age) => _repository.GetByAge(age) ?? new List<Employee>();
+        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetByAgeAsync(int age) => await _repository.GetByAgeAsync(age) ?? new System.Collections.Generic.List<Employee>();
 
-        public List<Employee> GetByDepartmentId(int departmentId) => _repository.GetByDepartmentId(departmentId) ?? new List<Employee>();
+        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetByDepartmentIdAsync(int departmentId) => await _repository.GetByDepartmentIdAsync(departmentId) ?? new System.Collections.Generic.List<Employee>();
 
-        public List<Employee> SearchByNameOrSurname(string text) => _repository.SearchByNameOrSurname(text) ?? new List<Employee>();
+        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> SearchByNameOrSurnameAsync(string text) => await _repository.SearchByNameOrSurnameAsync(text) ?? new System.Collections.Generic.List<Employee>();
 
-        public int GetEmployeeCount() => _repository.GetEmployeeCount();
+        public async System.Threading.Tasks.Task<int> GetEmployeeCountAsync() => await _repository.GetEmployeeCountAsync();
 
-        public List<Employee> GetAllEmpByDepName(string departmentName)
+        public async System.Threading.Tasks.Task<System.Collections.Generic.List<Employee>> GetAllEmpByDepNameAsync(string departmentName)
         {
             if (string.IsNullOrWhiteSpace(departmentName))
-                return new List<Employee>();
+                return new System.Collections.Generic.List<Employee>();
 
-            return _repository.GetByDepartmentName(departmentName) ?? new List<Employee>();
+            return await _repository.GetByDepartmentNameAsync(departmentName) ?? new System.Collections.Generic.List<Employee>();
         }
     }
 }

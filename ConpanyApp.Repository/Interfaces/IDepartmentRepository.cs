@@ -10,7 +10,7 @@ namespace CompanyApp.Repository.Interfaces
 {
     public interface IDepartmentRepository : IBaseRepository<Department>
     {
-        List<Department> SearchByName(string text);
-        List<Department> GetSortedByCapacity(SortDirection direction);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Department>> SearchByNameAsync(string text);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Department>> GetSortedByCapacityAsync(SortDirection direction);
     }
 }

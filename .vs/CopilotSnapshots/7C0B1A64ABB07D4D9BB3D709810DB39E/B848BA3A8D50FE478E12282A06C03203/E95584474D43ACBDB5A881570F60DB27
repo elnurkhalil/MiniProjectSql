@@ -1,0 +1,122 @@
+﻿using CompanyApp.Domain.Entities;
+using CompanyApp.Service.Exceptions;
+using CompanyApp.Service.Helpers.Constants;
+using CompanyApp.Repository.Interfaces;
+using CompanyApp.Service.Services.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace CompanyApp.Service.Services
+{
+    public class EmployeeService : IEmployeeService
+    {
+        private readonly IEmployeeRepository _repository;
+
+        public EmployeeService(IEmployeeRepository repository)
+        {
+            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
+        }
+
+        public List<Employee> GetAll() => _repository.GetAll() ?? new List<Employee>();
+
+        public Employee GetById(int id)
+        {
+            if (id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+            return _repository.GetById(id) ?? throw new NotFoundException(string.Format(Messages.EmployeeNotFound, id));
+        }
+
+        public void Create(Employee employee)
+        {
+            if (employee == null) throw new ValidationException(Messages.EmployeeNameSurnameRequired);
+
+            if (string.IsNullOrWhiteSpace(employee.Name) || string.IsNullOrWhiteSpace(employee.Surname))
+                throw new ValidationException(Messages.EmployeeNameSurnameRequired);
+
+            if (employee.Name.Any(char.IsDigit) || employee.Surname.Any(char.IsDigit))
+                throw new ValidationException(Messages.EmployeeNameSurnameNoDigits);
+
+            if (employee.Age < 0) throw new ValidationException(Messages.EmployeeAgeCantBeNegative);
+
+            if (employee.Age < 18 || employee.Age > 65)
+                throw new ValidationException(Messages.EmployeeAgeRestriction);
+
+            _repository.Create(employee);
+        }
+
+        public void Edit(Employee employee)
+        {
+            if (employee == null) throw new ValidationException(Messages.EmployeeNameSurnameRequired);
+            if (employee.Id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+
+            var existing = _repository.GetById(employee.Id);
+            if (existing == null) throw new NotFoundException(string.Format(Messages.EmployeeNotFound, employee.Id));
+
+            if (string.IsNullOrWhiteSpace(employee.Name))
+            {
+                employee.Name = existing.Name;
+            }
+            else
+            {
+                if (employee.Name.Any(char.IsDigit))
+                    throw new ValidationException(Messages.EmployeeNameSurnameNoDigits);
+            }
+
+            if (string.IsNullOrWhiteSpace(employee.Surname))
+            {
+                employee.Surname = existing.Surname;
+            }
+            else
+            {
+                if (employee.Surname.Any(char.IsDigit))
+                    throw new ValidationException(Messages.EmployeeNameSurnameNoDigits);
+            }
+
+            if (employee.Age <= 0)
+            {
+                employee.Age = existing.Age;
+            }
+            else
+            {
+                if (employee.Age < 18 || employee.Age > 65)
+                    throw new ValidationException(Messages.EmployeeAgeRestriction);
+            }
+
+            if (string.IsNullOrWhiteSpace(employee.Address))
+            {
+                employee.Address = existing.Address;
+            }
+
+            if (employee.Department == null)
+            {
+                employee.Department = existing.Department;
+            }
+
+            _repository.Edit(employee);
+        }
+
+        public void Delete(int id)
+        {
+            if (id <= 0) throw new ValidationException(Messages.IdMustBeGreaterThanZero);
+            var existing = _repository.GetById(id);
+            if (existing == null) throw new NotFoundException(string.Format(Messages.EmployeeNotFound, id));
+            _repository.Delete(id);
+        }
+
+        public List<Employee> GetByAge(int age) => _repository.GetByAge(age) ?? new List<Employee>();
+
+        public List<Employee> GetByDepartmentId(int departmentId) => _repository.GetByDepartmentId(departmentId) ?? new List<Employee>();
+
+        public List<Employee> SearchByNameOrSurname(string text) => _repository.SearchByNameOrSurname(text) ?? new List<Employee>();
+
+        public int GetEmployeeCount() => _repository.GetEmployeeCount();
+
+        public List<Employee> GetAllEmpByDepName(string departmentName)
+        {
+            if (string.IsNullOrWhiteSpace(departmentName))
+                return new List<Employee>();
+
+            return _repository.GetByDepartmentName(departmentName) ?? new List<Employee>();
+        }
+    }
+}

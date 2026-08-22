@@ -2702,11 +2702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Service\\CompanyApp.Service.csproj",
+      "projectUniqueName": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\CompanyApp.Service.csproj",
       "projectName": "CompanyApp.Service",
-      "projectPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Service\\CompanyApp.Service.csproj",
+      "projectPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\CompanyApp.Service.csproj",
       "packagesPath": "C:\\Users\\asus vivobook\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Service\\obj\\",
+      "outputPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2729,11 +2729,11 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Domain\\CompanyApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Domain\\CompanyApp.Domain.csproj"
+            "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\CompanyApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Domain\\CompanyApp.Domain.csproj"
             },
-            "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Repository\\CompanyApp.Repository.csproj": {
-              "projectPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# Mini Project\\MiniProject\\ConpanyApp.Repository\\CompanyApp.Repository.csproj"
+            "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\CompanyApp.Repository.csproj": {
+              "projectPath": "C:\\Users\\asus vivobook\\OneDrive\\Изображения\\Рабочий стол\\C# first mini project\\MiniProject\\MiniProjectSql\\ConpanyApp.Repository\\CompanyApp.Repository.csproj"
             }
           }
         }
