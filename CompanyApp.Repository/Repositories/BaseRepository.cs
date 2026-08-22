@@ -35,10 +35,10 @@ namespace CompanyApp.Repository.Repositories
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public Task CreateAsync(T entity)
+        public async Task CreateAsync(T entity)
         {
-            _context.Set<T>().Add(entity);
-            return Task.CompletedTask;
+            await _context.Set<T>().AddAsync(entity);
+            await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)
@@ -47,6 +47,7 @@ namespace CompanyApp.Repository.Repositories
             if (entity != null)
             {
                 _context.Set<T>().Remove(entity);
+                await _context.SaveChangesAsync();
             }
         }
 
